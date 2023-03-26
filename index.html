@@ -271,6 +271,54 @@
     </p>
   </footer>
 
+  <section class="modal modal-account">
+    <h2 class="modal__title">Войти в личный кабинет</h2>
+    <form action="#" method="post">
+      <input type="tel" name="phone" placeholder="Номер телефона">
+      <input type="password" name="password" placeholder="Пароль">
+      <p>
+        <input type="checkbox" name="remember" id="user-password">
+        <span class="checkbox-indicator"></span>
+        <label for="user-password">Запомнить меня</label>
+      </p>
+      <button class="button" type="submit">Войти</button>
+      <a class="restore" href="#">Забыли пароль?</a>
+    </form>
+    <p class="modal__text">
+      Вы еще не зарегистрированы ?
+    </p>
+    <a class="modal-button modal-button-registration" href="#">Регистрация</a>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal modal-registration">
+    <h2 class="modal__title">Регистрация</h2>
+    <form action="#" method="post">
+      <input type="text" name="user-name" placeholder="Имя">
+      <input type="text" name="user-surname" placeholder="Фамилия">
+      <input type="text" name="user-patronymic" placeholder="Отчество">
+      <input type="tel" name="user-phone" placeholder="Номер телефона">
+      <input type="email" name="user-email" placeholder="E-mail">
+      <input type="password" name="user-password" placeholder="Придумайте пароль">
+      <input type="password" name="user-confirm-password" placeholder="Повторите пароль">
+      <p>Пароль должен содержать от 6 символов</p>
+      <button class="button" type="submit">Зарегистрироваться</button>
+    </form>
+    <p class="modal__text">Есть аккаунт?</p>
+    <a class="modal-button modal-button-account" href="#">Войти</a>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal modal-password">
+    <h2 class="modal__title">Забыли пароль?</h2>
+    <form action="#" method="post">
+      <input type="email" name="user-email" placeholder="Введите ваш E-mail">
+      <p class="modal__text">На E-mail придет письмо со ссылкой на смену пароля</p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
 </body>
 
 </html>
