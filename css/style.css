@@ -1,17 +1,17 @@
 :root {
+  --page-background: #FAF9F9;
+
+  --basic-white: #FFF;
   --pink: #FFCCCC;
   --copper-pink: #976464;
   --light-purplish-gray: #CFA5A5;
   --pinkp-grayp-brown: #8D5757;
   --gray-silk: #C5C5A8;
   --very-pale-green : #E2E1CF;
-}
 
-.page-body {
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
+  --basic-text-color: #424242;
+  --text-color--80: rgba(94, 92, 90, 0.8);
+  --user-menu: #BDBDBD;
 }
 
 a {
@@ -36,7 +36,69 @@ img {
   overflow: hidden;
 }
 
-p {
-  color: var(--basic-pink);
-  background-color: var(--basic-pink);
+.container {
+  max-width: 1620px;
+  padding: 20px;
+  margin: auto;
+}
+
+.page-body {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  background-color: var(--page-background);
+}
+
+.logo__img {
+  background-color: var(--page-background);
+}
+
+.main-menu {
+  list-style: none;
+  padding: 0;
+  color: var(--basic-text-color);
+}
+
+.main-menu__link {
+  font-size: 16px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.search-field {
+  font-size: 14px;
+  color: var(--user-menu);
+}
+
+.user-menu {
+  font-size: 14px;
+}
+
+.user-menu__item {
+  background-color: var(--page-background);
+}
+
+.contacts-header {
+  font-size: 14px;
+  color: var(--basic-white);
+
+  background: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
+}
+
+.contacts-header__phone {
+  color: inherit;
+}
+
+
+.slider__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--basic-text-color);
+}
+
+.slider__text {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text-color--80);
 }
