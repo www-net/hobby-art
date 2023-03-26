@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,43 +8,65 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
     <div class="container">
-      <div class="logo">
-        <img class="" src="" alt="Логотип компании 'ХОББИ АРТ'">
-      </div>
       <nav class="menu">
+        <a class="logo">
+          <img class="logo__img" src="img/logo/logo.png" alt="Логотип компании 'ХОББИ АРТ'">
+        </a>
         <ul class="main-menu">
-          <li class="main-menu__item">Каталог</li>
-          <li class="main-menu__item">Оплата и доставка</li>
-          <li class="main-menu__item">Бонусная программа</li>
-          <li class="main-menu__item">О компании</li>
-          <li class="main-menu__item">Контакты</li>
+          <li class="main-menu__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Оплата и доставка</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Бонусная программа</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
+        <div class="search">
+          <!-- Поиск товара -->
+          <input type="search" placeholder="Поиск товара">
+        </div>
+        <div class="user-menu">
+          <ul class="user-menu__list">
+            <li class="user-menu__item"><a href="#">Войти</a></li>
+            <li class="user-menu__item"><a href="#">Избранное</a></li>
+            <li class="user-menu__item"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="search">
-        Поиск товара
-      </div>
-      <div class="user-menu">
-        <ul class="user-menu__list">
-          <li class="user-menu__item"><a href="#">Войти</a></li>
-          <li class="user-menu__item"><a href="#">Избранное</a></li>
-          <li class="user-menu__item"><a href="#">Корзина</a></li>
-        </ul>
-      </div>
     </div>
     <div class="contacts-header">
-      <a class="contacts-header__tel" href="tel:+79247652820">+7 (924) 765 28 20</a>
+      <a class="contacts-header__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>
       <address class="contacts-header__address">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</address>
       <p class="contacts-header__working-hours">
         Ежедневно с 10:00 до 19:00
       </p>
     </div>
     <div class="container">
-      <div class="slider">
-        <!-- Слайдер -->
-      </div>
+      <section class="slider">
+        <img class="slider__img" width="571" height="425" src="img/slider/slider-img.png" alt="">
+        <h2 class="slider__title">Пряжа Macrametr</h2>
+        <p class="slider__text">
+          Повседневная практика показывает, что
+          укрепление и развитие внутренней структуры
+          обеспечивает широкому кругу (специалистов)
+          участие в формировании форм воздействия.
+        </p>
+        <a class="slider__link" href=""></a>
+        <button class="button slider__button slider__button-back" disabled></button>
+        <span>1/5</span>
+        <button class="button slider__button slider__button-next"></button>
+      </section>
     </div>
   </header>
 
@@ -59,36 +81,38 @@
       </div>
       <div class="products__items">
         <ul class="products__list">
+          <button class="button products__button products__button-back" type="button" disabled>Назад</button>
           <li class="products__item">
             <a href="" class="products__link">
-              <img src="" alt="">
+              <img width="300" height="487" src="img/products/products-1.png" alt="">
               <p>Пряжа Macrametr</p>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img src="" alt="">
+              <img width="300" height="487" src="img/products/products-2.png" alt="">
               <p>Кольца бамбук</p>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img src="" alt="">
+              <img width="300" height="487" src="img/products/products-3.png" alt="">
               <p>Трикотажная пряжа Zefirka</p>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img src="" alt="">
+              <img width="300" height="487" src="img/products/products-4.png" alt="">
               <p>Шпагат крученый</p>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img src="" alt="">
+              <img width="300" height="487" src="img/products/products-5.png" alt="">
               <p>Джут «Арахна»</p>
             </a>
           </li>
+          <button class="button products__button products__button-next" type="button">Вперед</button>
         </ul>
       </div>
     </section>
@@ -170,6 +194,7 @@
 
     <section class="gallery-telegram">
       <h2 class="gallery-telegram__title">Наш telegram</h2>
+      <p class="gallery-telegram__bg">telegram</p>
       <ul class="gallery-telegram__list">
         <li class="gallery-telegram__list-item">
           <img class="gallery-telegram__img" src="" alt="">
@@ -190,7 +215,7 @@
           <img class="gallery-telegram__img" src="" alt="">
         </li>
       </ul>
-      <a class="gallery-telegram__link" href="#">@Hobbyyart_dv</a>
+      <a class="gallery-telegram__link">@Hobbyyart(вариант ссылки)</a>
     </section>
 
     <section class="feedback">
@@ -201,7 +226,7 @@
           <input type="text" name="user-name">
           <input type="tel" name="phone">
           <div class="feedback__button-wrapper">
-            <button class="feedback__button"></button>
+            <input class="button feedback__button" type="submit"></input>
             <p>*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
           </div>
         </form>
@@ -209,15 +234,15 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer page-footer">
     <div class="footer__logo">
       <img class="logo" src="" alt="">
     </div>
     <div class="footer__contacts">
-      <p>+7 (924) 765 28 20</p>
+      <a class="footer__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>
       <p>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</p>
       <p>Ежедневно с 10:00 до 19:00</p>
-      <p>@hobbyart_dv</p>
+      <a>@hobbyart(вариант ссылки)</a>
     </div>
     <ul class="footer__menu-list">
       <li class="footer__list-item"> <a href="#">Каталог</a> </li>
@@ -234,8 +259,8 @@
 
     <div class="subscription">
       <form action="#" method="post">
-        <input type="email">
-        <button>Подписаться</button>
+        <input type="email" placeholder="Ваш Email">
+        <input class="button subscription__button" type="submit" value="Подписаться">
         <p>Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
       </form>
     </div>
