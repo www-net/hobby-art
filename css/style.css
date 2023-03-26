@@ -1,6 +1,42 @@
+:root {
+  --pink: #FFCCCC;
+  --copper-pink: #976464;
+  --light-purplish-gray: #CFA5A5;
+  --pinkp-grayp-brown: #8D5757;
+  --gray-silk: #C5C5A8;
+  --very-pale-green : #E2E1CF;
+}
+
 .page-body {
   font-family: "Montserrat-Regular";
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+p {
+  color: var(--basic-pink);
+  background-color: var(--basic-pink);
 }
