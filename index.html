@@ -16,7 +16,7 @@
     <div class="container">
       <nav class="menu">
         <a class="logo">
-          <img class="logo__img" width="122" height="62" src="img/logo/logo.png" alt="Логотип компании 'ХОББИ АРТ'">
+          <img class="logo__img" width="122" height="62" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
         </a>
         <ul class="main-menu">
           <li class="main-menu__item">
@@ -37,13 +37,19 @@
         </ul>
         <div class="search">
           <!-- Поиск товара -->
-          <input class="search-field" type="search" placeholder="Поиск товара">
+          <input class="placeholder-text search-field" type="search" placeholder="Поиск товара">
         </div>
         <div class="user-menu">
           <ul class="user-menu__list">
-            <li class="button button--half-gray user-menu__item"><a href="#">Войти</a></li>
-            <li class="button button--half-gray user-menu__item"><a href="#">Избранное</a></li>
-            <li class="button button--half-gray user-menu__item"><a href="#">Корзина</a></li>
+            <li class="user-menu__item">
+              <a class="button button--half-gray" href="#">Войти</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="button button--half-gray" href="#">Избранное</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="button button--half-gray" href="#">Корзина</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -69,7 +75,7 @@
         </p>
         <a class="slider__link" href=""></a>
         <button class="button slider__button slider__button-back" disabled></button>
-        <span>1/5</span>
+        <span class="slider__pagination">1/5</span>
         <button class="button slider__button slider__button-next"></button>
       </section>
     </div>
@@ -80,9 +86,12 @@
     <section class="products">
       <h2 class="visually-hidden">Виды продукции</h2>
       <div class="products__select">
-        <input type="radio">
-        <span>Новинки</span>
-        <span>Популярное</span>
+        <label>
+          <input type="checkbox" checked>
+          <span>Кастомный чекбокс</span>
+        </label>
+        <span class="title products__choice products__choice--active">Новинки</span>
+        <span class="title products__choice">Популярное</span>
       </div>
       <div class="products__items">
         <ul class="products__list">
@@ -90,31 +99,31 @@
           <li class="products__item">
             <a href="" class="products__link">
               <img width="300" height="487" src="img/products/products-1.png" alt="">
-              <p>Пряжа Macrametr</p>
+              <span class="products__link-text">Пряжа Macrametr</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
               <img width="300" height="487" src="img/products/products-2.png" alt="">
-              <p>Кольца бамбук</p>
+              <span class="products__link-text">Кольца бамбук</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
               <img width="300" height="487" src="img/products/products-3.png" alt="">
-              <p>Трикотажная пряжа Zefirka</p>
+              <span class="products__link-text">Трикотажная пряжа Zefirka</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
               <img width="300" height="487" src="img/products/products-4.png" alt="">
-              <p>Шпагат крученый</p>
+              <span class="products__link-text">Шпагат крученый</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
               <img width="300" height="487" src="img/products/products-5.png" alt="">
-              <p>Джут «Арахна»</p>
+              <span class="products__link-text">Джут «Арахна»</span>
             </a>
           </li>
           <button class="button products__button products__button-next" type="button">Вперед</button>
@@ -123,8 +132,8 @@
     </section>
 
     <section class="catalog">
-      <h2 class="catalog__title">Каталог товаров</h2>
-      <p class="catalog__bg">Каталог</p>
+      <h2 class="title">Каталог товаров</h2>
+      <p class="section-background catalog__bg">Каталог</p>
       <ul class="catalog__list">
         <li class="catalog__item">
           <h3 class="catalog-item__title">Макраме</h3>
@@ -132,37 +141,37 @@
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Вязание</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Вышивка</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Лепка</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Инструменты</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Упаковка</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Товары для творчества</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
+          <h3 class="catalog-item__title">Книги</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
@@ -170,7 +179,7 @@
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title">Хобби арт: 9 лет на рынке</h2>
+      <h2 class="title">Хобби арт: 9 лет на рынке</h2>
       <ul class="advantages__list">
         <li class="advantages__list-item">
           <h3 class="advantages__item-title">Поставщики</h3>
@@ -199,40 +208,40 @@
 
     <section class="gallery-telegram">
       <h2 class="gallery-telegram__title">Наш telegram</h2>
-      <p class="gallery-telegram__bg">telegram</p>
+      <p class="section-background gallery-telegram__bg">telegram</p>
       <ul class="gallery-telegram__list">
         <li class="gallery-telegram__list-item">
-          <img class="gallery-telegram__img" src="" alt="">
+          <img class="gallery-telegram__img" src="img/telegram/telegram-1.png" alt="">
         </li>
         <li class="gallery-telegram__list-item">
-          <img class="gallery-telegram__img" src="" alt="">
+          <img class="gallery-telegram__img" src="img/telegram/telegram-2.png" alt="">
         </li>
         <li class="gallery-telegram__list-item">
-          <img class="gallery-telegram__img" src="" alt="">
+          <img class="gallery-telegram__img" src="img/telegram/telegram-3.png" alt="">
         </li>
         <li class="gallery-telegram__list-item">
-          <img class="gallery-telegram__img" src="" alt="">
+          <img class="gallery-telegram__img" src="img/telegram/telegram-4.png" alt="">
         </li>
         <li class="gallery-telegram__list-item">
-          <img class="gallery-telegram__img" src="" alt="">
+          <img class="gallery-telegram__img" src="img/telegram/telegram-5.png" alt="">
         </li>
         <li class="gallery-telegram__list-item">
-          <img class="gallery-telegram__img" src="" alt="">
+          <img class="gallery-telegram__img" src="img/telegram/telegram-6.png" alt="">
         </li>
       </ul>
-      <a class="gallery-telegram__link">@Hobbyyart(вариант ссылки)</a>
+      <a class="button gallery-telegram__link">@Hobbyyart (вариант ссылки)</a>
     </section>
 
     <section class="feedback">
-      <h2 class="feedback__title">Есть вопрос? Мы перезвоним!</h2>
-      <p class="feedback__bg">Вопросы</p>
+      <h2 class="title">Есть вопрос? Мы перезвоним!</h2>
+      <p class="section-background feedback__bg">Вопросы</p>
       <div class="feedback__block">
         <form action="#" method="post">
-          <input type="text" name="user-name">
-          <input type="tel" name="phone">
+          <input class="placeholder-text" type="text" name="user-name" placeholder="Ваше имя">
+          <input class="placeholder-text" type="tel" name="phone" placeholder="Телефон">
           <div class="feedback__button-wrapper">
             <input class="button feedback__button" type="submit"></input>
-            <p>*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            <p class="feedback__note">*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
           </div>
         </form>
       </div>
@@ -241,7 +250,7 @@
 
   <footer class="footer page-footer">
     <div class="footer__logo">
-      <img class="logo" src="" alt="">
+      <img class="logo" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
     </div>
     <div class="footer__contacts">
       <a class="footer__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>
@@ -250,23 +259,44 @@
       <a>@hobbyart(вариант ссылки)</a>
     </div>
     <ul class="footer__menu-list">
-      <li class="footer__list-item"> <a href="#">Каталог</a> </li>
-      <li class="footer__list-item"> <a href="#">Акции</a> </li>
-      <li class="footer__list-item"> <a href="#">Новинки</a> </li>
-      <li class="footer__list-item"> <a href="#">Популярное</a> </li>
-      <li class="footer__list-item"> <a href="#">Гарантия и возврат</a></li>
-      <li class="footer__list-item"> <a href="#">Оплата и доставка</a></li>
-      <li class="footer__list-item"> <a href="#">Бонусная программа</a></li>
-      <li class="footer__list-item"> <a href="#">О компании</a></li>
-      <li class="footer__list-item"> <a href="#">Преимущества</a> </li>
-      <li class="footer__list-item"> <a href="#">Личный кабинет</a></li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Каталог</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Акции</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Новинки</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Популярное</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Гарантия и возврат</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Оплата и доставка</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Бонусная программа</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">О компании</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Преимущества</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__menu-link" href="#">Личный кабинет</a>
+      </li>
     </ul>
 
     <div class="subscription">
+      <span class="subscription__text">Узнавайте первым о новинках и новостях</span>
       <form action="#" method="post">
-        <input type="email" placeholder="Ваш Email">
+        <input class="placeholder-text" type="email" placeholder="Ваш Email">
         <input class="button subscription__button" type="submit" value="Подписаться">
-        <p>Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
       </form>
     </div>
 
@@ -279,15 +309,15 @@
   <section class="modal modal-account">
     <h2 class="modal__title">Войти в личный кабинет</h2>
     <form action="#" method="post">
-      <input type="tel" name="phone" placeholder="Номер телефона">
-      <input type="password" name="password" placeholder="Пароль">
+      <input class="placeholder-text" type="tel" name="phone" placeholder="Номер телефона">
+      <input class="placeholder-text" type="password" name="password" placeholder="Пароль">
       <p>
         <input type="checkbox" name="remember" id="user-password">
         <span class="checkbox-indicator"></span>
-        <label for="user-password">Запомнить меня</label>
+        <label class="modal__text" for="user-password">Запомнить меня</label>
       </p>
       <button class="button" type="submit">Войти</button>
-      <a class="restore" href="#">Забыли пароль?</a>
+      <a class="modal__text" href="#">Забыли пароль?</a>
     </form>
     <p class="modal__text">
       Вы еще не зарегистрированы ?
@@ -299,14 +329,14 @@
   <section class="modal modal-registration">
     <h2 class="modal__title">Регистрация</h2>
     <form action="#" method="post">
-      <input type="text" name="user-name" placeholder="Имя">
-      <input type="text" name="user-surname" placeholder="Фамилия">
-      <input type="text" name="user-patronymic" placeholder="Отчество">
-      <input type="tel" name="user-phone" placeholder="Номер телефона">
-      <input type="email" name="user-email" placeholder="E-mail">
-      <input type="password" name="user-password" placeholder="Придумайте пароль">
-      <input type="password" name="user-confirm-password" placeholder="Повторите пароль">
-      <p>Пароль должен содержать от 6 символов</p>
+      <input class="placeholder-text" type="text" name="user-name" placeholder="Имя">
+      <input class="placeholder-text" type="text" name="user-surname" placeholder="Фамилия">
+      <input class="placeholder-text" type="text" name="user-patronymic" placeholder="Отчество">
+      <input class="placeholder-text" type="tel" name="user-phone" placeholder="Номер телефона">
+      <input class="placeholder-text" type="email" name="user-email" placeholder="E-mail">
+      <input class="placeholder-text" type="password" name="user-password" placeholder="Придумайте пароль">
+      <input class="placeholder-text" type="password" name="user-confirm-password" placeholder="Повторите пароль">
+      <p class="modal__note">Пароль должен содержать от 6 символов</p>
       <button class="button" type="submit">Зарегистрироваться</button>
     </form>
     <p class="modal__text">Есть аккаунт?</p>
@@ -317,8 +347,8 @@
   <section class="modal modal-password">
     <h2 class="modal__title">Забыли пароль?</h2>
     <form action="#" method="post">
-      <input type="email" name="user-email" placeholder="Введите ваш E-mail">
-      <p class="modal__text">На E-mail придет письмо со ссылкой на смену пароля</p>
+      <input class="placeholder-text" type="email" name="user-email" placeholder="Введите ваш E-mail">
+      <p class="modal__note">На E-mail придет письмо со ссылкой на смену пароля</p>
       <button class="button" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
