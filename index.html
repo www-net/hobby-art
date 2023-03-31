@@ -224,22 +224,22 @@
       <h2 class="title gallery-telegram__title">Наш telegram</h2>
       <p class="section-background gallery-telegram__bg">telegram</p>
       <ul class="gallery-telegram__list">
-        <li class="gallery-telegram__list-item">
+        <li class="gallery-telegram__item">
           <img class="gallery-telegram__img" src="img/telegram/telegram-1.png" alt="">
         </li>
-        <li class="gallery-telegram__list-item">
+        <li class="gallery-telegram__item">
           <img class="gallery-telegram__img" src="img/telegram/telegram-2.png" alt="">
         </li>
-        <li class="gallery-telegram__list-item">
+        <li class="gallery-telegram__item">
           <img class="gallery-telegram__img" src="img/telegram/telegram-3.png" alt="">
         </li>
-        <li class="gallery-telegram__list-item">
+        <li class="gallery-telegram__item">
           <img class="gallery-telegram__img" src="img/telegram/telegram-4.png" alt="">
         </li>
-        <li class="gallery-telegram__list-item">
+        <li class="gallery-telegram__item">
           <img class="gallery-telegram__img" src="img/telegram/telegram-5.png" alt="">
         </li>
-        <li class="gallery-telegram__list-item">
+        <li class="gallery-telegram__item">
           <img class="gallery-telegram__img" src="img/telegram/telegram-6.png" alt="">
         </li>
       </ul>
@@ -247,77 +247,88 @@
     </section>
 
     <section class="feedback">
-      <h2 class="title">Есть вопрос? Мы перезвоним!</h2>
-      <p class="section-background feedback__bg">Вопросы</p>
-      <div class="feedback__block">
-        <form action="#" method="post">
-          <input class="placeholder-text" type="text" name="user-name" placeholder="Ваше имя">
-          <input class="placeholder-text" type="tel" name="phone" placeholder="Телефон">
-          <div class="feedback__button-wrapper">
-            <input class="button feedback__button" type="submit"></input>
-            <p class="feedback__note">*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-          </div>
-        </form>
+      <h2 class="title feedback__title">Есть вопрос? Мы перезвоним!</h2>
+      <span class="section-background feedback__bg">Вопросы</span>
+      <form class="feedback__form" action="#" method="post">
+        <input class="input placeholder-text feedback__input" type="text" name="user-name" placeholder="Ваше имя">
+        <input class="input placeholder-text feedback__input" type="tel" name="phone" placeholder="Телефон">
+        <div class="feedback__button-wrapper">
+          <input class="button feedback__button" type="submit">
+          <p class="feedback__note">*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+      </form>
       </div>
     </section>
   </main>
 
   <footer class="footer page-footer">
-    <div class="footer__logo">
-      <img class="logo" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
-    </div>
-    <div class="footer__contacts">
-      <a class="footer__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>
-      <p>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</p>
-      <p>Ежедневно с 10:00 до 19:00</p>
-      <a>@hobbyart(вариант ссылки)</a>
-    </div>
-    <ul class="footer__menu-list">
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Каталог</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Акции</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Новинки</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Популярное</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Гарантия и возврат</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Оплата и доставка</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Бонусная программа</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">О компании</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Преимущества</a>
-      </li>
-      <li class="footer__list-item">
-        <a class="footer__menu-link" href="#">Личный кабинет</a>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <a class="footer__logo">
+            <img class="logo" width="100" height="50" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
+          </a>
+          <div class="footer__contacts">
+            <a class="footer__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>
+            <p>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</p>
+            <p>Ежедневно с 10:00 до 19:00</p>
+            <a>@hobbyart(вариант ссылки)</a>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__products-list">
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Каталог</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Акции</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Новинки</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Популярное</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Гарантия и возврат</a>
+            </li>
+          </ul>
+          <ul class="footer__services-list">
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Бонусная программа</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">О компании</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Преимущества</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
 
-    <div class="subscription">
-      <span class="subscription__text">Узнавайте первым о новинках и новостях</span>
-      <form action="#" method="post">
-        <input class="placeholder-text" type="email" placeholder="Ваш Email">
-        <input class="button subscription__button" type="submit" value="Подписаться">
-        <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-      </form>
-    </div>
+        <div class="subscription">
+          <div class="subscription_wrapper">
+            <span class="subscription__text">Узнавайте первым о новинках и новостях</span>
+            <form action="#" method="post">
+              <input class="input placeholder-text subscription__input" type="email" placeholder="Ваш Email">
+              <input class="button subscription__button" type="submit" value="Подписаться">
+              <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </form>
+          </div>
 
-    <p class="subscription__copyright">
-      © 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби.
-      Все права защищены. Условия использования и политика конфиденциальности
-    </p>
+          <p class="subscription__copyright">
+            &copy;&nbsp;2012-2021&nbsp;ХОББИ АРТ&nbsp;&mdash; официальный интернет&#8209;магазин товаров для хобби. Все
+            права защищены.
+            Условия использования и&nbsp;политика конфиденциальности
+          </p>
+        </div>
+      </div class="footer__inner">
+    </div>
   </footer>
 
   <section class="modal modal-account">
