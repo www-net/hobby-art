@@ -23,6 +23,31 @@
   --footer-lighter-gradient: #D7D7B9 130.03%;
 }
 
+.page {
+  height: 100vh;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--basic-text-color);
+
+  background-color: var(--page-background);
+}
+
+.container {
+  width: 1620px;
+  margin: auto;
+  padding: 0 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -43,26 +68,6 @@ img {
   clip-path: insert(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: var(--basic-text-color);
-
-  background-color: var(--page-background);
-}
-
-.container {
-  max-width: 1620px;
-  margin: auto;
-  padding: 0 20px;
 }
 
 .section-background {
