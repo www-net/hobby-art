@@ -157,7 +157,7 @@ img {
   margin-bottom: 30px;
 }
 
-.menu__inner {
+.menu .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -246,7 +246,7 @@ img {
   background: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
 }
 
-.contacts-header__inner {
+.contacts-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -277,6 +277,8 @@ img {
 }
 
 .slider__img {
+  width: 571px;
+  height: 425px;
   margin: 10px 120px 23px 130px;
 }
 
@@ -337,9 +339,14 @@ img {
   text-fill-color: transparent;
 }
 
+.products__items {
+  display: flex;
+}
+
 .products__list {
   display: flex;
   align-items: center;
+  gap: 30px;
 
   margin: 0;
   padding: 0;
@@ -361,7 +368,7 @@ img {
   content: "";
 
   position: absolute;
-  left: -30px;
+  left: -60px;
   width: 30px;
   height: 30px;
 
@@ -369,6 +376,10 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.products__button-back {
+  order: -1;
 }
 
 .products__button-next::before {
@@ -380,19 +391,28 @@ img {
 .products__link {
   position: relative;
 
+  display: flex;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: var(--basic-white);
 }
 
+.products__img {
+  width: 300px;
+  height: 467px;
+}
+
 .products__link-text {
   position: absolute;
   bottom: 30px;
   left: 30px;
+
+  width: 190px;
 }
 
-/* Products */
+/* Catalog*/
 
 .catalog__list {
   display: flex;
@@ -497,6 +517,16 @@ img {
   grid-row: 2 / 4;
 }
 
+.gallery-telegram__img--big {
+  width: 800px;
+  height: 800px;
+}
+
+.gallery-telegram__img--small {
+  width: 390px;
+  height: 390px;
+}
+
 /* Feedback */
 
 .feedback {
@@ -562,8 +592,13 @@ img {
 }
 
 .footer__logo {
-  display: block;
+  display: flex;
   margin-bottom: 50px;
+}
+
+.footer__logo-img {
+  width: 100px;
+  height: 50px;
 }
 
 .footer__contacts {
@@ -602,8 +637,16 @@ img {
   font-weight: 600;
 }
 
+.subscription__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .subscription__input {
+  width: 250px;
+  margin-right: -78px;
   padding: 16px 32px;
+
   border: none;
 }
 
