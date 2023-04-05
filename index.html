@@ -38,20 +38,25 @@
         </ul>
 
         <div class="menu__inner-wrapper">
-          <input class="placeholder-text search" type="search" placeholder="Поиск товара">
+          <form class="search" action="">
+            <input class="placeholder-text search__field" type="search" placeholder="Поиск товара">
+            <input class="search__button" type="submit" value="">
+          </form>
 
           <ul class="user-menu">
             <li class="user-menu__item">
-              <a class="menu__button" href="#">Войти</a>
+              <a class="menu__button user-menu__account" href="#">Войти</a>
             </li>
             <li class="user-menu__item">
-              <a class="menu__button" href="#">Избранное</a>
+              <a class="menu__button user-menu__favorites" href="#">Избранное</a>
+              <span class="user-menu__count user-menu__favorites-count">2</span>
             </li>
             <li class="user-menu__item">
-              <a class="menu__button" href="#">Корзина</a>
+              <a class="menu__button user-menu__cart" href="#">Корзина</a>
+              <span class="user-menu__count user-menu__cart-count">1</span>
             </li>
+          </ul>
         </div>
-        </ul>
       </div>
     </nav>
 
@@ -81,9 +86,9 @@
             <a class="button slider__link" href="#">В каталог</a>
           </div>
           <div class="slider__pagination">
-            <button class="button slider__button slider__button-back" disabled></button>
+            <button class="slider__button slider__button-back" disabled></button>
             <span class="slider__pagination-count">1/5</span>
-            <button class="button slider__button slider__button-next"></button>
+            <button class="slider__button slider__button-next"></button>
           </div>
         </div>
       </div>
@@ -142,7 +147,7 @@
     </section>
 
     <section class="catalog">
-      <h2 class="title">Каталог товаров</h2>
+      <h2 class="title catalog__title">Каталог товаров</h2>
       <p class="section-background catalog__bg">Каталог</p>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -176,7 +181,7 @@
           <p class="catalog-item__more">Подробнее</p>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog-item__title">Товары для творчества</h3>
+          <h3 class="catalog-item__title">Товары для&nbsp;творчества</h3>
           <p class="catalog-item__price">от 250 ₽</p>
           <p class="catalog-item__more">Подробнее</p>
         </li>
@@ -189,9 +194,9 @@
     </section>
 
     <section class="advantages">
-      <h2 class="title">Хобби арт: 9 лет на рынке</h2>
+      <h2 class="title advantages__title">Хобби арт: 9 лет на рынке</h2>
       <ul class="advantages__list">
-        <li class="advantages__list-item">
+        <li class="advantages__item advantages__item--suppliers">
           <h3 class="advantages__item-title">Поставщики</h3>
           <p class="advantages__item-text">
             Мы работаем только с надежными
@@ -199,14 +204,14 @@
             для творчества
           </p>
         </li>
-        <li class="advantages__list-item">
+        <li class="advantages__item advantages__item--products">
           <h3 class="advantages__item-title">Товары</h3>
           <p class="advantages__item-text">
             Мы привозим актуальные и новые товары,
             инструменты для вашего творчества по низким ценам
           </p>
         </li>
-        <li class="advantages__list-item">
+        <li class="advantages__item advantages__item--bonuses">
           <h3 class="advantages__item-title">Бонусы</h3>
           <p class="advantages__item-text">
             У нас действует накопительная бонусная система скидок.
@@ -245,7 +250,7 @@
             src="img/telegram/telegram-6.png" alt="">
         </li>
       </ul>
-      <a class="button gallery-telegram__link">@Hobbyyart (вариант ссылки)</a>
+      <a class="button gallery-telegram__link">@hhbbyyaart</a>
     </section>
 
     <section class="feedback">
@@ -265,16 +270,16 @@
   <footer class="footer page-footer">
     <div class="container">
       <div class="footer__inner">
-        <div>
+        <div class="footer__information">
           <a class="footer__logo">
             <img class="footer__logo-img" width="100" height="50" src="img/logo/logo.png"
               alt="Логотип компании 'Хобби арт'">
           </a>
           <div class="footer__contacts">
             <a class="footer__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>
-            <p>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</p>
-            <p>Ежедневно с 10:00 до 19:00</p>
-            <a>@hobbyart(вариант ссылки)</a>
+            <p class="footer__address">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</p>
+            <p class="footer__hours">Ежедневно с 10:00 до 19:00</p>
+            <a class="footer__telegram">@hhbbyyaart</a>
           </div>
         </div>
         <div class="footer__menu">
@@ -320,8 +325,8 @@
             <form class="subscription__form" action="#" method="post">
               <input class="input placeholder-text subscription__input" type="email" placeholder="Ваш Email">
               <input class="button subscription__button" type="submit" value="Подписаться">
-              <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
             </form>
+            <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
           </div>
 
           <p class="subscription__copyright">
