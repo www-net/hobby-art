@@ -16,12 +16,12 @@
 
     <nav class="menu">
       <div class="container">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="logo__img" width="122" height="62" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
         </a>
         <ul class="main-menu">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="catalog-makrame.html">Каталог</a>
+            <a class="main-menu__link" href="#">Каталог</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">Оплата и доставка</a>
@@ -97,183 +97,33 @@
   </header>
 
   <main class="container">
-    <h1 class="visually-hidden">Главная страница магазина 'ХОББИ АРТ'</h1>
-    <section class="products">
-      <h2 class="visually-hidden">Виды продукции</h2>
-      <form action="#">
-        <div class="products__select">
-          <div>
-            <input class="products__input visually-hidden" type="checkbox" id="products-checkbox">
-            <label class="products__checkbox" for="products-checkbox"></label>
-          </div>
-          <span class="title products__choice products__choice-new products__choice--active">Новинки</span>
-          <span class="title products__choice products__choice-popular">Популярное</span>
-        </div>
-      </form>
-      <div class="products__items">
-        <ul class="products__list">
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-1.png" alt="">
-              <span class="products__link-text">Пряжа Macrametr</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-2.png" alt="">
-              <span class="products__link-text">Кольца бамбук</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-3.png" alt="">
-              <span class="products__link-text">Трикотажная пряжа Zefirka</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-4.png" alt="">
-              <span class="products__link-text">Шпагат крученый</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-5.png" alt="">
-              <span class="products__link-text">Джут «Арахна»</span>
-            </a>
-          </li>
-        </ul>
-        <button class="products__button products__button-back" type="button" disabled></button>
-        <button class="products__button products__button-next" type="button"></button>
-      </div>
-    </section>
-
-    <section class="catalog">
-      <h2 class="title catalog__title">Каталог товаров</h2>
-      <p class="section-background catalog__bg">Каталог</p>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Вязание</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Вышивка</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Лепка</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Инструменты</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item catalog__item--purple-bg-img">
-          <h3 class="catalog-item__title">Упаковка</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Товары для&nbsp;творчества</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Книги</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
+    <h1 class="visually-hidden">Каталог магазина 'ХОББИ АРТ'</h1>
+    <div class="catalog-head">
+      <ul class="bread-crumbs">
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="index.html">Главная</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Каталог</a></li>
+        <li class="bread-crumbs__item">Maкраме</li>
       </ul>
-    </section>
-
-    <section class="advantages">
-      <h2 class="title advantages__title">Хобби арт: 9 лет на рынке</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--suppliers">
-          <h3 class="advantages__item-title">Поставщики</h3>
-          <p class="advantages__item-text">
-            Мы работаем только с надежными
-            и проверенными поставщиками товаров
-            для творчества
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--products">
-          <h3 class="advantages__item-title">Товары</h3>
-          <p class="advantages__item-text">
-            Мы привозим актуальные и новые товары,
-            инструменты для вашего творчества по низким ценам
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--bonuses">
-          <h3 class="advantages__item-title">Бонусы</h3>
-          <p class="advantages__item-text">
-            У нас действует накопительная бонусная система скидок.
-            Дарим в день рождения 500 бонусных рублей
-          </p>
-        </li>
+      <ul class="sort">
+        <li class="sort__item"><button class="sort__button sort__button--down">Цена</button></li>
+        <li class="sort__item"><button class="sort__button sort__button--up">Цена</button></li>
       </ul>
-    </section>
+    </div>
 
-    <section class="gallery-telegram">
-      <h2 class="title gallery-telegram__title">Наш telegram</h2>
-      <p class="section-background gallery-telegram__bg">telegram</p>
-      <ul class="gallery-telegram__list">
-        <li class="gallery-telegram__item">
-          <img class="gallery-telegram__img gallery-telegram__img--big" width="800" height="800"
-            src="img/telegram/telegram-1.png" alt="">
-        </li>
-        <li class="gallery-telegram__item">
-          <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-            src="img/telegram/telegram-2.png" alt="">
-        </li>
-        <li class="gallery-telegram__item">
-          <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-            src="img/telegram/telegram-3.png" alt="">
-        </li>
-        <li class="gallery-telegram__item">
-          <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-            src="img/telegram/telegram-4.png" alt="">
-        </li>
-        <li class="gallery-telegram__item">
-          <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-            src="img/telegram/telegram-5.png" alt="">
-        </li>
-        <li class="gallery-telegram__item">
-          <img class="gallery-telegram__img gallery-telegram__img--big" width="800" height="800"
-            src="img/telegram/telegram-6.png" alt="">
-        </li>
-      </ul>
-      <a class="button gallery-telegram__link">@hhbbyyaart</a>
-    </section>
 
-    <section class="feedback">
-      <h2 class="title feedback__title">Есть вопрос? Мы перезвоним!</h2>
-      <span class="section-background feedback__bg">Вопросы</span>
-      <form class="feedback__form" action="#" method="post">
-        <input class="input placeholder-text feedback__input" type="text" name="user-name" placeholder="Ваше имя">
-        <input class="input placeholder-text feedback__input" type="tel" name="phone" placeholder="Телефон">
-        <div class="feedback__button-wrapper">
-          <input class="button feedback__button" type="submit">
-          <p class="feedback__note">*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-      </form>
-      </div>
-    </section>
+
+
+
+
+
+
   </main>
 
   <footer class="footer page-footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__information">
-          <a class="footer__logo">
+          <a class="footer__logo" href="index.html">
             <img class="footer__logo-img" width="100" height="50" src="img/logo/logo.png"
               alt="Логотип компании 'Хобби арт'">
           </a>
