@@ -119,7 +119,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
 
-  background: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
+  background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
   border-radius: 49px;
   border: none;
   cursor: pointer;
@@ -1585,6 +1585,15 @@ img {
   border-radius: 50%;
 }
 
+.colors__count {
+  line-height: 20px;
+}
+
+.goods__item-price {
+  font-weight: 600;
+  line-height: 20px;
+}
+
 .colors__item--gray-khaki {
   background-color: var(--gray-khaki);
 }
@@ -1604,7 +1613,90 @@ img {
 /* catalog-card-button */
 
 .catalog-card-button {
+  position: relative;
 
+  width: 100%;
+  margin: 0;
+  padding: 1px;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  border: none;
+  border-radius: 46px;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.catalog-card-button:before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--half-gray);
+  border-radius: 46px;
+  z-index: 1;
+}
+
+.catalog-card-button:focus::before,
+.catalog-card-button:hover::before {
+  background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
+  background-color: var(--copper-pink);
+}
+
+.catalog-card-button:active {
+  padding: 0;
+}
+
+.catalog-card-button__inner {
+  position: relative;
+
+  display: block;
+
+  background-color: var(--basic-white);
+  border-radius: 46px;
+  z-index: 2;
+}
+
+.catalog-card-button__inner:active {
+  background-color: transparent;
+}
+
+.catalog-card-button__text {
+  position: relative;
+
+  display: block;
+  padding: 15px 30px 15px 40px;
+
+  background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.catalog-card-button__text:active {
+  padding: 16px 30px 16px 40px;
+
+  color: var(--basic-white);
+  background-image: none;
+  -webkit-text-fill-color: var(--basic-white);
+}
+
+.catalog-card-button__icon {
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.catalog-card-button:active path{
+  fill: white;
 }
 
 /* goods */
@@ -1666,3 +1758,6 @@ img {
   max-width: 185px;
 }
 
+.goods__colors {
+  margin-bottom: 18px;
+}
