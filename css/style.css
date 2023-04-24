@@ -1453,6 +1453,14 @@ img {
   margin-bottom: 15px;
 }
 
+.filters__button-inner {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 /* filter-button */
 
 .filter-button {
@@ -1481,13 +1489,6 @@ img {
   border: none;
 }
 
-.filters__button-inner {
-  position: relative;
-
-  display: block;
-  margin: 0;
-  padding: 0;
-}
 
 .filter-button:active .filters__button-inner {
   background-color: var(--page-background);
@@ -1558,6 +1559,15 @@ img {
   background-repeat: no-repeat;
 }
 
+/* --- */
+
+.filters__values {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--half-gray);
+  text-align: center;
+}
+
 /* colors */
 
 .colors {
@@ -1596,6 +1606,22 @@ img {
   line-height: 20px;
 }
 
+.goods__old-price {
+  padding-right: 10px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  text-decoration: line-through;
+}
+
+.goods__price-value--new-price {
+  background-color: var(--copper-pink);
+  background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .goods__cart {
   bottom: 0;
 }
@@ -1615,6 +1641,47 @@ img {
 .colors__item--pear {
   background-color: #EED53A;
 }
+
+.colors__item--pale-taupe {
+  background-color: #B69882;
+}
+
+.colors__item--light-purplish-gray {
+  background-color: #CFBBAC;
+}
+
+.colors__item--beaver {
+  background-color: #9D856B;
+}
+
+.colors__item--pearl-white {
+  background-color: #FAF9F6;
+}
+
+.colors__item--almond-crayola {
+  background-color: #EBD5BC;
+}
+
+.colors__item--the-waters-of-bondi-beach {
+  background-color: #0395AF;
+}
+
+.colors__item--medium-pink {
+  background-color: #F09482;
+}
+
+.colors__item--linen {
+  background-color: #FCF7F4;
+}
+
+.colors__item--apricot {
+  background-color: #FAF0E2;
+}
+
+.colors__item--santa-hat {
+  background-color: #F24135;
+}
+
 
 /* catalog-card-button */
 
@@ -1701,17 +1768,21 @@ img {
   padding: 0;
 }
 
-.catalog-card-button:active path{
+.catalog-card-button:active path {
   fill: white;
 }
 
 /* goods */
 
 .goods {
-  grid-template-areas: goods;
+  grid-area: goods;
 }
 
 .goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+
   margin: 0;
   padding: 0;
 
@@ -1767,7 +1838,6 @@ img {
 .goods__colors {
   margin-bottom: 18px;
 }
-
 
 .goods__item-choice {
   position: absolute;
