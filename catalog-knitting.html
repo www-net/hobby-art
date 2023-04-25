@@ -84,7 +84,7 @@
               обеспечивает широкому кругу (специалистов)
               участие в формировании форм воздействия.
             </p>
-            <a class="button slider__link" href="#">В каталог</a>
+            <a class="button slider__link" href="./catalog.html">В каталог</a>
           </div>
           <div class="slider__pagination">
             <button class="slider__button slider__button-back" disabled></button>
@@ -103,7 +103,7 @@
       <ul class="bread-crumbs">
         <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="index.html">Главная</a></li>
         <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="catalog.html">Каталог</a></li>
-        <li class="bread-crumbs__item">Maкраме</li>
+        <li class="bread-crumbs__item">Вязание</li>
       </ul>
       <ul class="sort">
         <li class="sort__item"><button class="sort__button sort__button--down">Цена</button></li>
@@ -111,7 +111,7 @@
       </ul>
     </div>
 
-    <section class="catalog-macrame">
+    <section class="catalog-goods">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="#">
@@ -119,17 +119,18 @@
             <legend class="filters__legend">Тип изделий</legend>
             <ul class="filters__list">
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="twine" id="filter-twine"
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="yarn" id="filter-yarn"
                   checked>
-                <label class="filters__label" for="filter-twine">Шпагат, шнуры, веревки</label>
+                <label class="filters__label" for="filter-yarn">Пряжа</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="ring" id="filter-ring">
-                <label class="filters__label" for="filter-ring">Кольца, бусины</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="tools" id="filter-tools">
+                <label class="filters__label" for="filter-tools">Инструменты</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="jute" id="filter-jute">
-                <label class="filters__label" for="filter-jute">Джут</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="accessories"
+                  id="filter-accessories">
+                <label class="filters__label" for="filter-accessories">Аксессуары</label>
               </li>
             </ul>
           </fieldset>
@@ -138,43 +139,39 @@
             <legend class="filters__legend">Состав</legend>
             <ul class="filters__list">
               <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="knitted"
+                  id="filter-knitted">
+                <label class="filters__label" for="filter-knitted">Трикотажная</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="wool" id="filter-wool">
+                <label class="filters__label" for="filter-wool">Шерсть</label>
+              </li>
+              <li class="filters__item">
                 <input class="visually-hidden filters__input-checkbox" type="checkbox" name="cotton" id="filter-cotton">
                 <label class="filters__label" for="filter-cotton">Хлопок</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="synthetics"
-                  id="filter-synthetics">
-                <label class="filters__label" for="filter-synthetics">Синтетика</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="merino" id="filter-merino">
+                <label class="filters__label" for="filter-merino">Меринос</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="core" id="filter-core">
-                <label class="filters__label" for="filter-core">С сердечником</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="filters__fieldset">
-            <legend class="filters__legend">Диаметр</legend>
-            <ul class="filters__list">
-              <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="diametr-3mm"
-                  id="filter-diametr-3mm">
-                <label class="filters__label" for="filter-diametr-3mm">3</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="alpaca" id="filter-alpaca">
+                <label class="filters__label" for="filter-alpaca">Альпака</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="diametr-4mm"
-                  id="filter-diametr-4mm">
-                <label class="filters__label" for="filter-diametr-4mm">4</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="mohair" id="filter-mohair">
+                <label class="filters__label" for="filter-mohair">Мохер</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="diametr-4,5mm"
-                  id="filter-diametr-4,5mm">
-                <label class="filters__label" for="filter-diametr-4,5mm">4,5</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="viscose"
+                  id="filter-viscose">
+                <label class="filters__label" for="filter-viscose">Вискоза</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="diametr-5mm"
-                  id="filter-diametr-5mm">
-                <label class="filters__label" for="filter-diametr-5mm">5</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="cashmere"
+                  id="filter-cashmere">
+                <label class="filters__label" for="filter-cashmere">Кашемир</label>
               </li>
             </ul>
           </fieldset>
@@ -183,23 +180,68 @@
             <legend class="filters__legend">Производитель</legend>
             <ul class="filters__list">
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="macrametr"
-                  id="filter-macrametr">
-                <label class="filters__label" for="filter-macrametr">Macrametr</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="katia" id="filter-katia">
+                <label class="filters__label" for="filter-katia">Katia</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="drops" id="filter-drops">
+                <label class="filters__label" for="filter-drops">Drops</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="lana-gatto"
+                  id="filter-lana-gatto">
+                <label class="filters__label" for="filter-lana-gatto">Lana Gatto</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="gazzal"
+                  id="filter-gazzal">
+                <label class="filters__label" for="filter-gazzal">Gazzal</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="alize"
+                  id="filter-alize">
+                <label class="filters__label" for="filter-alize">Alize</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="yarn-art"
+                  id="filter-yarn-art">
+                <label class="filters__label" for="filter-yarn-art">Yarn art</label>
               </li>
               <li class="filters__item">
                 <input class="visually-hidden filters__input-checkbox" type="checkbox" name="marshmallow"
                   id="filter-marshmallow">
                 <label class="filters__label" for="filter-marshmallow">Зефирка</label>
               </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend">Изделие</legend>
+            <ul class="filters__list">
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="gamma" id="filter-gamma">
-                <label class="filters__label" for="filter-gamma">Гамма</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="cap"
+                  id="filter-cap">
+                <label class="filters__label" for="filter-cap">Шапка</label>
               </li>
               <li class="filters__item">
-                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="sibcord"
-                  id="filter-sibcord">
-                <label class="filters__label" for="filter-sibcord">Сибшнур</label>
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="mittens"
+                  id="filter-mittens">
+                <label class="filters__label" for="filter-mittens">Варежки</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="socks"
+                  id="filter-socks">
+                <label class="filters__label" for="filter-socks">Носки</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="sweater"
+                  id="filter-sweater">
+                <label class="filters__label" for="filter-sweater">Свитер</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden filters__input-checkbox" type="checkbox" name="children"
+                  id="filter-children">
+                <label class="filters__label" for="filter-children">Детям</label>
               </li>
             </ul>
           </fieldset>
@@ -215,7 +257,7 @@
               </span>
             </button>
           </div>
-          <p class="filters__values">Подобрано&nbsp;<span class="filters__values-count">6&nbsp;</span>товаров</p>
+          <p class="filters__values">Подобрано&nbsp;<span class="filters__values-count">3&nbsp;</span><span class="filters__values-ending">товарa</span></p>
         </form>
       </section>
 
@@ -529,7 +571,7 @@
         <div class="footer__menu">
           <ul class="footer__products-list">
             <li class="footer__list-item">
-              <a class="footer__menu-link" href="#">Каталог</a>
+              <a class="footer__menu-link" href="./catalog.html">Каталог</a>
             </li>
             <li class="footer__list-item">
               <a class="footer__menu-link" href="#">Акции</a>

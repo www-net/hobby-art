@@ -1352,9 +1352,9 @@ img {
 
 }
 
-/* catalog-macrame*/
+/* catalog-goods*/
 
-.catalog-macrame {
+.catalog-goods {
   display: grid;
   grid-template-columns: 227px 1fr;
   grid-template-areas: "filters goods";
@@ -1372,12 +1372,13 @@ img {
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
+  margin-bottom: 20px;
 
   border: none;
   border-bottom: 1px solid var(--half-gray);
 }
 
-.filters__fieldset:nth-child(4) {
+.filters__fieldset:nth-last-child(3) {
   border-bottom: none;
 }
 
