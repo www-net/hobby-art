@@ -1430,22 +1430,33 @@ img {
   background: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
 }
 
-.filters__input-checkbox:checked+.filters__label::after {
+.filters__label::after {
   content: "";
 
   position: absolute;
   left: 1px;
 
+  display: none;
   width: 12px;
   height: 12px;
 
   border-radius: 2px;
   background-color: var(--page-background);
-  background-image: url("../img/filters/check.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
+.filters__label:hover::after {
+  display: block;
+
+  background-image: url("../img/filters/check-grey.svg");
+}
+
+.filters__input-checkbox:checked+.filters__label::after {
+  display: block;
+
+  background-image: url("../img/filters/check.svg");
+}
 
 /* filters button */
 
