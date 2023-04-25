@@ -11,6 +11,7 @@
   --very-pale-green: #E2E1CF;
   --gray: #5E5C5A;
   --half-gray: #BDBDBD;
+  --silver: #C4C4C4;
   --basic-white: #FFF;
   --basic-text-color: #424242;
   --note-text-color: #525252;
@@ -1611,33 +1612,6 @@ img {
   line-height: 20px;
 }
 
-.goods__item-price {
-  margin-bottom: 15px;
-
-  font-weight: 600;
-  line-height: 20px;
-}
-
-.goods__old-price {
-  padding-right: 10px;
-
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 13px;
-  text-decoration: line-through;
-}
-
-.goods__price-value--new-price {
-  background-color: var(--copper-pink);
-  background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.goods__cart {
-  bottom: 0;
-}
-
 .colors__item--gray-khaki {
   background-color: var(--gray-khaki);
 }
@@ -1692,6 +1666,22 @@ img {
 
 .colors__item--santa-hat {
   background-color: #F24135;
+}
+
+.colors__item--violet-blue-rayola {
+  background-color: #2C66A5;
+}
+
+.colors__item--green-crayola {
+  background-color: #1FA866;
+}
+
+.colors__item--intense-red-orange {
+  background-color: #FFB565;
+}
+
+.colors__item--stars-in-shock {
+  background-color: #FF65C1;
 }
 
 
@@ -1803,7 +1793,10 @@ img {
 
 .goods__item {
   position: relative;
+
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   width: 245px;
   min-height: 422px;
   padding: 60px 30px 30px;
@@ -1816,15 +1809,15 @@ img {
 .goods__link {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
+
   color: var(--basic-text-color);
 }
 
 .goods__item-title {
   order: 1;
 
-  max-width: 168px;
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
 
   font-family: 'Montserrat';
@@ -1847,8 +1840,49 @@ img {
   max-width: 185px;
 }
 
+.goods__characteristics {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
 .goods__colors {
   margin-bottom: 18px;
+}
+
+.goods__item-price {
+  margin-bottom: 15px;
+
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.goods__old-price {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  text-decoration: line-through;
+}
+
+.goods__old-price--p {
+  padding-right: 10px;
+}
+
+.goods__price-value--new-price {
+  background-color: var(--copper-pink);
+  background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.goods__cart {
+  bottom: 0;
 }
 
 .goods__item-choice {
