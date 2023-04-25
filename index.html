@@ -74,7 +74,8 @@
     <section class="slider">
       <div class="container">
         <div class="slider__item">
-          <img class="slider__img" width="571" height="425" src="img/slider/slider-img.png" alt="Фото пряжи от компании 'Macrametr'">
+          <img class="slider__img" width="571" height="425" src="img/slider/slider-img.png"
+            alt="Фото пряжи от компании 'Macrametr'">
           <div class="slider__wrapper">
             <h2 class="slider__title">Пряжа Macrametr</h2>
             <p class="slider__text">
@@ -114,25 +115,29 @@
         <ul class="products__list">
           <li class="products__item">
             <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-1.png" alt="Фото пряжи 'Macrametr'">
+              <img class="products__img" width="300" height="487" src="img/products/products-1.png"
+                alt="Фото пряжи 'Macrametr'">
               <span class="products__link-text">Пряжа Macrametr</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-2.png" alt="Фото колец из бамбука">
+              <img class="products__img" width="300" height="487" src="img/products/products-2.png"
+                alt="Фото колец из бамбука">
               <span class="products__link-text">Кольца бамбук</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-3.png" alt="Фото пряжи от компании'Zefirka'">
+              <img class="products__img" width="300" height="487" src="img/products/products-3.png"
+                alt="Фото пряжи от компании'Zefirka'">
               <span class="products__link-text">Трикотажная пряжа Zefirka</span>
             </a>
           </li>
           <li class="products__item">
             <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-4.png" alt="Фото крученного шпагата">
+              <img class="products__img" width="300" height="487" src="img/products/products-4.png"
+                alt="Фото крученного шпагата">
               <span class="products__link-text">Шпагат крученый</span>
             </a>
           </li>
@@ -341,11 +346,19 @@
     </div>
   </footer>
 
-  <section class="modal modal-account">
+  <section class="modal modal-account modal-show">
     <h2 class="modal__title">Войти в личный кабинет</h2>
-    <form action="#" method="post">
-      <input class="placeholder-text" type="tel" name="phone" placeholder="Номер телефона">
-      <input class="placeholder-text" type="password" name="password" placeholder="Пароль">
+    <form class="modal__form" action="#" method="post">
+      <p>
+        <label class="visually-hidden" for="modal-phone">Номер телефона</label>
+        <input class="placeholder-text modal-input" id="modal-phone" type="tel" name="phone"
+          placeholder="Номер телефона">
+      </p>
+      <p>
+        <label class="visually-hidden" for="modal-password">Пароль</label>
+        <input class="placeholder-text modal-input modal-input--password" id="modal-password" type="password" name="password" placeholder="Пароль">
+        <a class="modal__eye-button" type="button" onclick="visibleHidePassword(this);"></a>
+      </p>
       <p>
         <input type="checkbox" name="remember" id="user-password">
         <span class="checkbox-indicator"></span>
@@ -388,6 +401,8 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
+<script src="./js/password-visible.js"></script>
 
 </body>
 
