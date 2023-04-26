@@ -84,7 +84,11 @@
               обеспечивает широкому кругу (специалистов)
               участие в формировании форм воздействия.
             </p>
-            <a class="button slider__link" href="./catalog.html">В каталог</a>
+            <a class="button button--color slider__link" href="./catalog.html">
+              <span class="button__inner">
+                <span class="button__text">В каталог</span>
+              </span>
+            </a>
           </div>
           <div class="slider__pagination">
             <button class="slider__button slider__button-back" disabled></button>
@@ -257,7 +261,11 @@
             src="img/telegram/telegram-6.png" alt="Фото из галереи telegram канала">
         </li>
       </ul>
-      <a class="button gallery-telegram__link">@hhbbyyaart</a>
+      <a class="button button--color">
+        <span class="button__inner">
+          <span class="button__text">@hhbbyyaart</span>
+        </span>
+      </a>
     </section>
 
     <section class="feedback">
@@ -267,7 +275,11 @@
         <input class="input placeholder-text feedback__input" type="text" name="user-name" placeholder="Ваше имя">
         <input class="input placeholder-text feedback__input" type="tel" name="phone" placeholder="Телефон">
         <div class="feedback__button-wrapper">
-          <input class="button feedback__button" type="submit">
+          <button class="button button--color" type="submit">
+            <span class="button__inner">
+              <span class="button__text">Отправить</span>
+            </span>
+          </button>
           <p class="feedback__note">*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
       </form>
       </div>
@@ -292,7 +304,7 @@
         <div class="footer__menu">
           <ul class="footer__products-list">
             <li class="footer__list-item">
-              <a class="footer__menu-link" href="#">Каталог</a>
+              <a class="footer__menu-link" href="./catalog.html">Каталог</a>
             </li>
             <li class="footer__list-item">
               <a class="footer__menu-link" href="#">Акции</a>
@@ -331,7 +343,11 @@
             <span class="subscription__text">Узнавайте первым о новинках и новостях</span>
             <form class="subscription__form" action="#" method="post">
               <input class="input placeholder-text subscription__input" type="email" placeholder="Ваш Email">
-              <input class="button subscription__button" type="submit" value="Подписаться">
+              <button class="button button--color" type="submit">
+                <span class="button__inner">
+                  <span class="button__text">Подписаться</span>
+                </span>
+              </button>
             </form>
             <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
           </div>
@@ -346,7 +362,7 @@
     </div>
   </footer>
 
-  <section class="modal modal-account modal-show">
+  <section class="modal modal-account">
     <h2 class="modal__title">Войти в личный кабинет</h2>
     <form class="modal__form" action="#" method="post">
       <p class="modal-account__inner">
@@ -399,17 +415,21 @@
     </form>
     <p class="">Есть аккаунт?</p>
     <a class="modal-button modal-button-account" href="#">Войти</a>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button"></button>
   </section>
 
-  <section class="modal modal-password">
+  <section class="modal modal-password modal-show">
     <h2 class="modal__title">Забыли пароль?</h2>
-    <form action="#" method="post">
-      <input class="placeholder-text" type="email" name="user-email" placeholder="Введите ваш E-mail">
-      <p class="modal__note">На E-mail придет письмо со ссылкой на смену пароля</p>
-      <button class="button" type="submit">Отправить</button>
+    <form class="modal-password__form" action="#" method="post">
+      <input class="placeholder-text modal-input modal-password__input" type="email" name="user-email" placeholder="Введите ваш E-mail">
+      <p class="modal-password__note">На E-mail придет письмо со ссылкой на смену пароля</p>
+      <button class="button button--color modal-password__button" type="submit">
+        <span class="button__inner">
+          <span class="button__text">Отправить</span>
+        </span>
+      </button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button"></button>
   </section>
 
   <script src="./js/password-visible.js"></script>

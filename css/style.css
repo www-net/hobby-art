@@ -673,11 +673,7 @@ img {
   color: var(--text-color--80);
 }
 
-.slider__link {
-  position: relative;
-}
-
-.slider__link::before {
+.slider__link::after {
   content: "";
   top: -70px;
   left: -150px;
@@ -1994,7 +1990,6 @@ img {
   font-size: 28px;
   line-height: 34px;
   color: var(--basic-text-color);
-  text-align: center;
 }
 
 .modal__form {
@@ -2039,11 +2034,6 @@ img {
 
 .modal__text-link:active {
   opacity: 1;
-}
-
-.modal__note {
-  font-size: 12px;
-  line-height: 15px;
 }
 
 /* --- */
@@ -2167,6 +2157,23 @@ img {
 
 .modal-password {
   display: none;
+}
+
+.modal-password__input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.modal-password__button {
+  display: block;
+  margin: auto;
+}
+
+.modal-password__note {
+  margin-bottom: 40px;
+
+  font-size: 12px;
+  line-height: 15px;
 }
 
 /* --- */
