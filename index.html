@@ -349,29 +349,39 @@
   <section class="modal modal-account modal-show">
     <h2 class="modal__title">Войти в личный кабинет</h2>
     <form class="modal__form" action="#" method="post">
-      <p>
+      <p class="modal-account__inner">
         <label class="visually-hidden" for="modal-phone">Номер телефона</label>
         <input class="placeholder-text modal-input" id="modal-phone" type="tel" name="phone"
           placeholder="Номер телефона">
       </p>
-      <p>
+      <p class="modal-account__inner">
         <label class="visually-hidden" for="modal-password">Пароль</label>
-        <input class="placeholder-text modal-input modal-input--password" id="modal-password" type="password" name="password" placeholder="Пароль">
+        <input class="placeholder-text modal-input modal-input--password" id="modal-password" type="password"
+          name="password" placeholder="Пароль">
         <a class="modal__eye-button" type="button" onclick="visibleHidePassword(this);"></a>
       </p>
-      <p>
-        <input type="checkbox" name="remember" id="user-password">
-        <span class="checkbox-indicator"></span>
-        <label class="modal__text" for="user-password">Запомнить меня</label>
+      <p class="modal-account__inner">
+        <input class="visually-hidden modal-account__remember-input" type="checkbox" name="remember" id="user-password">
+        <label class="modal-account__remember" for="user-password">Запомнить меня</label>
       </p>
-      <button class="button" type="submit">Войти</button>
-      <a class="modal__text" href="#">Забыли пароль?</a>
+      <p class="modal-account__button-wrapper">
+        <button class="button button--color" type="submit">
+          <span class="button__inner">
+            <span class="button__text">Войти</span>
+          </span>
+        </button>
+        <a class="modal__text-link" href="#">Забыли пароль?</a>
+      </p>
     </form>
-    <p class="modal__text">
-      Вы еще не зарегистрированы ?
+    <p class="modal-account__registration">
+      <span class="modal-account__text-registration">Вы еще не зарегистрированы ?</span>
+      <a class="button" href="#">
+        <span class="button__inner">
+          <span class="button__text">Регистрация</span>
+        </span>
+      </a>
     </p>
-    <a class="modal-button modal-button-registration" href="#">Регистрация</a>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button"></button>
   </section>
 
   <section class="modal modal-registration">
@@ -387,7 +397,7 @@
       <p class="modal__note">Пароль должен содержать от 6 символов</p>
       <button class="button" type="submit">Зарегистрироваться</button>
     </form>
-    <p class="modal__text">Есть аккаунт?</p>
+    <p class="">Есть аккаунт?</p>
     <a class="modal-button modal-button-account" href="#">Войти</a>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
@@ -402,7 +412,7 @@
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-<script src="./js/password-visible.js"></script>
+  <script src="./js/password-visible.js"></script>
 
 </body>
 
