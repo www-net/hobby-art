@@ -408,6 +408,12 @@ img {
   background-color: var(--page-background);
   border: 1px solid var(--half-gray);
   border-radius: 46px;
+
+  outline: none;
+}
+
+.search__field:focus {
+  border-color: var(--pink-brown);
 }
 
 .search__button {
@@ -1397,7 +1403,7 @@ img {
   height: 16px;
 
   top: 6px;
-  right: 5px;
+  right: 6px;
 
   background-image: url("../img/bread-crumbs/arrow.png");
   background-position: 0 0;
@@ -1469,7 +1475,7 @@ img {
   margin-bottom: 100px;
 }
 
-.catalog-page__wrapper {
+.catalog-page__menu {
   grid-area: catalog-menu;
 }
 
@@ -1528,7 +1534,24 @@ img {
 
 .catalog-page__knitting::after {
   background-image: url("../img/catalog/catalog-page-2.png");
+}
 
+.catalog-page__content {
+  grid-area: catalog-content;
+  padding-left: 30px;
+  width: 860px;
+}
+
+.catalog-page__paragraph {
+  display: block;
+  margin-bottom: 45px;
+}
+
+.catalog-page__point {
+  display: block;
+  margin-bottom: 25px;
+
+  font-size: 18px;
 }
 
 /* catalog-goods*/
