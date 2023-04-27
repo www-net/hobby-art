@@ -402,26 +402,44 @@
 
   <section class="modal modal-registration">
     <h2 class="modal__title">Регистрация</h2>
-    <form action="#" method="post">
-      <input class="placeholder-text" type="text" name="user-name" placeholder="Имя">
-      <input class="placeholder-text" type="text" name="user-surname" placeholder="Фамилия">
-      <input class="placeholder-text" type="text" name="user-patronymic" placeholder="Отчество">
-      <input class="placeholder-text" type="tel" name="user-phone" placeholder="Номер телефона">
-      <input class="placeholder-text" type="email" name="user-email" placeholder="E-mail">
-      <input class="placeholder-text" type="password" name="user-password" placeholder="Придумайте пароль">
-      <input class="placeholder-text" type="password" name="user-confirm-password" placeholder="Повторите пароль">
-      <p class="modal__note">Пароль должен содержать от 6 символов</p>
-      <button class="button" type="submit">Зарегистрироваться</button>
+    <form class="modal-registration__form" action="#" method="post">
+      <input class="placeholder-text modal-input modal-registration__input" type="text" name="user-name"
+        placeholder="Имя">
+      <input class="placeholder-text modal-input modal-registration__input" type="text" name="user-surname"
+        placeholder="Фамилия">
+      <input class="placeholder-text modal-input modal-registration__input" type="text" name="user-patronymic"
+        placeholder="Отчество">
+      <input class="placeholder-text modal-input modal-registration__input" type="tel" name="user-phone"
+        placeholder="Номер телефона">
+      <input class="placeholder-text modal-input modal-registration__input" type="email" name="user-email"
+        placeholder="E-mail">
+      <input class="placeholder-text modal-input modal-input--password modal-registration__input" type="password"
+        name="user-password" placeholder="Придумайте пароль">
+      <input class="placeholder-text modal-input modal-input--password modal-registration__input" type="password"
+        name="user-confirm-password" placeholder="Повторите пароль">
+      <p class="modal-registration__note">Пароль должен содержать от 6 символов</p>
+      <button class="button button--color modal-password__button" type="submit">
+        <span class="button__inner">
+          <span class="button__text">Зарегистрироваться</span>
+        </span>
+      </button>
     </form>
-    <p class="">Есть аккаунт?</p>
-    <a class="modal-button modal-button-account" href="#">Войти</a>
+    <div class="modal-registration__button-wrapper">
+      <p class="modal-registration__text">Есть аккаунт?</p>
+      <a class="button" href="#">
+        <span class="button__inner">
+          <span class="button__text">Войти</span>
+        </span>
+      </a>
+    </div>
     <button class="modal-close" type="button"></button>
   </section>
 
-  <section class="modal modal-password modal-show">
+  <section class="modal modal-password">
     <h2 class="modal__title">Забыли пароль?</h2>
     <form class="modal-password__form" action="#" method="post">
-      <input class="placeholder-text modal-input modal-password__input" type="email" name="user-email" placeholder="Введите ваш E-mail">
+      <input class="placeholder-text modal-input modal-password__input" type="email" name="user-email"
+        placeholder="Введите ваш E-mail">
       <p class="modal-password__note">На E-mail придет письмо со ссылкой на смену пароля</p>
       <button class="button button--color modal-password__button" type="submit">
         <span class="button__inner">
