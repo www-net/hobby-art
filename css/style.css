@@ -1321,6 +1321,7 @@ img {
 .footer__services-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -1560,6 +1561,12 @@ img {
   margin-bottom: 25px;
 
   font-size: 18px;
+}
+
+.catalog-page__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* catalog-goods*/
@@ -2132,6 +2139,8 @@ img {
 .modal__list {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .modal__list-item {
