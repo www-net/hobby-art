@@ -38,8 +38,12 @@
 
 }
 
+
+
 .page {
   height: 100vh;
+
+  overflow-x: hidden;
 }
 
 .page-body {
@@ -2047,8 +2051,8 @@ img {
 
 .modal-close {
   position: absolute;
-  top: 55px;
-  right: 70px;
+  top: 30px;
+  right: 45px;
 
   margin: 0;
   padding: 0;
@@ -2083,15 +2087,15 @@ img {
 
   box-sizing: border-box;
   width: 600px;
-  max-height: 90vh;
-  padding: 130px 107px 80px;
+  max-height: 95vh;
+  padding: 60px 107px 30px;
 
   background-color: var(--basic-white);
   box-shadow: 0px 0px 30px 15px rgba(68, 68, 68, 0.5);
   border-radius: 20px;
   transform: translate(-50%, -50%);
 
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .modal::-webkit-scrollbar {
@@ -2158,13 +2162,13 @@ img {
   opacity: 1;
 }
 
-/* modal-account*/
+/* modal-login*/
 
-.modal-account {
+.modal-login {
   display: none;
 }
 
-.modal-account__inner {
+.modal-login__inner {
   position: relative;
 
   display: flex;
@@ -2175,7 +2179,7 @@ img {
   margin-bottom: 25px;
 }
 
-.modal-account__remember {
+.modal-login__remember {
   position: relative;
 
   display: flex;
@@ -2189,7 +2193,7 @@ img {
   user-select: none;
 }
 
-.modal-account__remember::before {
+.modal-login__remember::before {
   content: "";
 
   position: absolute;
@@ -2202,12 +2206,12 @@ img {
   border-radius: 3px;
 }
 
-.modal-account__remember-input:focus+.modal-account__remember::before,
-.modal-account__remember-input:hover+.modal-account__remember::before {
+.modal-login__remember-input:focus+.modal-login__remember::before,
+.modal-login__remember-input:hover+.modal-login__remember::before {
   border-color: var(--pink-brown);
 }
 
-.modal-account__remember-input:checked+.modal-account__remember::after {
+.modal-login__remember-input:checked+.modal-login__remember::after {
   content: "";
 
   position: absolute;
@@ -2222,7 +2226,7 @@ img {
   background-size: 20px;
 }
 
-.modal-account__button-wrapper {
+.modal-login__button-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2230,12 +2234,12 @@ img {
   margin: 0 35px;
 }
 
-.modal-account__registration {
+.modal-login__registration {
   line-height: 20px;
   text-align: center;
 }
 
-.modal-account__text-registration {
+.modal-login__text-registration {
   display: inline-block;
   margin-bottom: 16px;
 }
