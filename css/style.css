@@ -1548,7 +1548,6 @@ img {
 .catalog-page__content {
   grid-area: catalog-content;
   padding-left: 30px;
-  width: 860px;
 }
 
 .catalog-page__paragraph {
