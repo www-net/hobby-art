@@ -15,7 +15,7 @@ const passwordButton = modalLogin.querySelector('.modal-login__password');
 // Отрываем модальное окно входа в личный кабинет
 
 loginLink.addEventListener('click', (evt) => {
-  evt.preventDefault();
+  // evt.preventDefault(); // Временно выключил, чтобы при клике открывалась страница личного кабинета
   modalLogin.classList.add('modal-show');
   userPhone.focus();
 });
@@ -73,3 +73,17 @@ window.addEventListener('keydown', (evt) => {
     }
   }
 });
+
+
+// Включение видимости вводимого пароля
+
+function visibleHidePassword(target) {
+  const input = document.querySelector('.modal-input--password');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('visible');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('visible');
+		input.setAttribute('type', 'password');
+	}
+}
