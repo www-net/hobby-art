@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--bg-color--white">
   <header class="main-header">
 
     <nav class="menu">
@@ -21,7 +21,7 @@
         </a>
         <ul class="main-menu">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Каталог</a>
+            <a class="main-menu__link" href="catalog.html">Каталог</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">Оплата и доставка</a>
@@ -48,8 +48,10 @@
               <a class="user-menu__button login-link" href="#">
                 <span class="user-menu__button-inner">
                   <span class="user-menu__button-text">
-                    <svg class="user-menu__img-user" xmlns="http://www.w3.org/2000/svg" width="12" height="13" fill="none">
-                      <path fill="#976464" d="M1.313 12.125s-.938 0-.938-.938c0-.937.938-3.75 5.625-3.75 4.688 0 5.625 2.813 5.625 3.75 0 .938-.938.938-.938.938H1.313ZM6 6.5A2.813 2.813 0 1 0 6 .875 2.813 2.813 0 0 0 6 6.5Z"/>
+                    <svg class="user-menu__img-user" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                      fill="none">
+                      <path fill="#976464"
+                        d="M1.313 12.125s-.938 0-.938-.938c0-.937.938-3.75 5.625-3.75 4.688 0 5.625 2.813 5.625 3.75 0 .938-.938.938-.938.938H1.313ZM6 6.5A2.813 2.813 0 1 0 6 .875 2.813 2.813 0 0 0 6 6.5Z" />
                     </svg>
                     Войти
                   </span>
@@ -60,8 +62,10 @@
               <a class="user-menu__button" href="#">
                 <span class="user-menu__button-inner">
                   <span class="user-menu__button-text">
-                    <svg class="user-menu__img-favorites" xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none">
-                      <path fill="#976464" d="M12.833 1.971C12.313.901 10.811.027 9.065.536A3.838 3.838 0 0 0 7 2.002 3.838 3.838 0 0 0 4.935.536C3.185.034 1.688.902 1.167 1.971c-.731 1.497-.428 3.181.902 5.005C3.11 8.403 4.6 9.85 6.763 11.53a.389.389 0 0 0 .478 0c2.158-1.676 3.652-3.111 4.694-4.554 1.326-1.824 1.63-3.508.898-5.005Z"/>
+                    <svg class="user-menu__img-favorites" xmlns="http://www.w3.org/2000/svg" width="14" height="12"
+                      fill="none">
+                      <path fill="#976464"
+                        d="M12.833 1.971C12.313.901 10.811.027 9.065.536A3.838 3.838 0 0 0 7 2.002 3.838 3.838 0 0 0 4.935.536C3.185.034 1.688.902 1.167 1.971c-.731 1.497-.428 3.181.902 5.005C3.11 8.403 4.6 9.85 6.763 11.53a.389.389 0 0 0 .478 0c2.158-1.676 3.652-3.111 4.694-4.554 1.326-1.824 1.63-3.508.898-5.005Z" />
                     </svg>
                     Избранное
                   </span>
@@ -73,8 +77,10 @@
               <a class="user-menu__button" href="#">
                 <span class="user-menu__button-inner">
                   <span class="user-menu__button-text">
-                    <svg class="user-menu__img-cart" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none">
-                      <path fill="#976464" d="M5.081.555 3.214 3.667h4.572L5.918.555l.63-.377 2.093 3.489h1.844c.284 0 .515.23.515.515v.322c0 2.159-.503 4.288-1.468 6.219a.502.502 0 0 1-.449.277H1.917a.502.502 0 0 1-.449-.278A13.904 13.904 0 0 1 0 4.503v-.32c0-.285.231-.516.516-.516h1.843L4.451.178l.63.377Z"/>
+                    <svg class="user-menu__img-cart" xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                      fill="none">
+                      <path fill="#976464"
+                        d="M5.081.555 3.214 3.667h4.572L5.918.555l.63-.377 2.093 3.489h1.844c.284 0 .515.23.515.515v.322c0 2.159-.503 4.288-1.468 6.219a.502.502 0 0 1-.449.277H1.917a.502.502 0 0 1-.449-.278A13.904 13.904 0 0 1 0 4.503v-.32c0-.285.231-.516.516-.516h1.843L4.451.178l.63.377Z" />
                     </svg>
                     Корзина
                   </span>
@@ -97,63 +103,133 @@
         </p>
       </div>
     </div>
-
-    <section class="slider">
-      <div class="container">
-        <div class="slider__item">
-          <img class="slider__img" width="571" height="425" src="img/slider/slider-img.png" alt="">
-          <div class="slider__wrapper">
-            <h2 class="slider__title">Пряжа Macrametr</h2>
-            <p class="slider__text">
-              Повседневная практика показывает, что
-              укрепление и развитие внутренней структуры
-              обеспечивает широкому кругу (специалистов)
-              участие в формировании форм воздействия.
-            </p>
-            <a class="button button--color slider__link" href="./catalog.html">
-              <span class="button__inner">
-                <span class="button__text">В каталог</span>
-              </span>
-            </a>
-          </div>
-          <div class="slider__pagination">
-            <button class="slider__button slider__button-back" disabled></button>
-            <span class="slider__pagination-count">1/5</span>
-            <button class="slider__button slider__button-next"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
   </header>
 
-  <main class="container">
-    <h1 class="visually-hidden">Каталог магазина 'ХОББИ АРТ'</h1>
-    <div class="catalog-head">
+  <main>
+    <h1 class="visually-hidden">Подробнее о товаре</h1>
+    <div class="container catalog-head">
       <ul class="bread-crumbs">
-        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="index.html">Главная</a></li>
-        <li class="bread-crumbs__item">Каталог</li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Главная</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./catalog.html">Каталог</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./catalog-macrame.html">Макраме</a></li>
+        <li class="bread-crumbs__item">Шпагат Macrametr</li>
       </ul>
     </div>
 
-    <section class="catalog-page">
-      <div class="catalog-page__wrapper">
-        <h2 class="title catalog-page__title">Каталог</h2>
-        <ul class="catalog-page__list">
-          <li class="catalog-page__item"><a class="catalog-page__link catalog-page__macrame" href="./catalog-macrame.html">Макраме</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link catalog-page__knitting" href="./catalog-knitting.html">Вязание</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link" href="">Вышивка</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link" href="">Лепка</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link" href="">Инструменты</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link" href="">Упаковка</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link" href="">Товары для&nbsp;творчества</a></li>
-          <li class="catalog-page__item"><a class="catalog-page__link" href="">Книги</a></li>
+    <section class="product-card">
+      <h2 class="visually-hidden">Карточка товара</h2>
+      <div class="container product-card__inner">
+        <h3 class="product-card__title">Шпагат Macrametr 4 мм, 100 нитей</h3>
+        <img class="product-card__img" src="./img/product-card/product-1.png" width="750" height="560"
+          alt="Фото товара">
+        <p class="product-card__text">
+          Хлопковый шпагат для рукоделия 4 мм состоит из 100 тонких скрученных нитей. Для создания модных перьев
+          (листьев), кисточек, панно, ловцов снов, брелков, украшений, салфеток, кашпо, наволочек и других изделий в
+          технике макраме. Мягкий и приятный на ощупь, при желании, можно легко расплести в бахрому.
+        </p>
+        <ul class="product-card__colors-list">
+          <li><button class="product-card__color-button bg-color-yellow product-card__color-button--active"
+              type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-light-greenish-blue" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-dark-red" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-pigeon-blue" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-pear" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-gray-khaki" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-night-blue" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-yellow-brown" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-yellow-gray" type="button"></button></li>
+          <li><button class="product-card__color-button bg-color-blackish-green" type="button"></button></li>
         </ul>
-      </div>
 
+        <div class="product-card__characteristics">
+          <h3 class="product-card__title">Характеристики</h3>
+          <dl class="product-card__description-list">
+            <div class="product-card__characteristics-item">
+              <dt class="product-card__characteristics-title">Длина</dt>
+              <dd class="product-card__characteristics-info">100 м</dd>
+            </div>
+            <div class="product-card__characteristics-item">
+              <dt class="product-card__characteristics-title">Производитель</dt>
+              <dd class="product-card__characteristics-info">Россия</dd>
+            </div>
+            <div class="product-card__characteristics-item">
+              <dt class="product-card__characteristics-title">Состав</dt>
+              <dd class="product-card__characteristics-info">100% хлопок</dd>
+            </div>
+            <div class="product-card__characteristics-item">
+              <dt class="product-card__characteristics-title">Толщина</dt>
+              <dd class="product-card__characteristics-info">4 мм (100 нитей)</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="product-card__price-box">
+          <span class="product-card__price">332 &#8381</span>
+          <div class="product-card__quantity-wrapper">
+            <button class="product-card__decrement" id="decrement">&ndash;</button>
+            <span class="product-card__quantity">01</span>
+            <button class="product-card__increment" id="increment">+</button>
+          </div>
+          <button class="button button--color product-card__cart-button" type="button">
+            <span class="button__inner">
+              <span class="button__text">Добавить в корзину</span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <section class="reviews product-card__reviews">
+        <h2 class="product-card__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__list-item">
+            <div class="reviews__head">
+                <img class="reviews__img" src="/./img/reviews/user-1.jpg" width="58" height="58" alt="Аватар пользователя">
+              <div>
+                <p class="reviews__name">Евгения Доценко</p>
+                <p class="reviews__stars"></p>
+              </div>
+              <span class="reviews__date">02.05.2023 12:00</span>
+            </div>
+            <p class="reviews__text">
+              <span class="reviews__text-insert">Комментарий:</span>
+              Хороший шпагат
+            </p>
+          </li>
+          <li class="reviews__list-item">
+            <div class="reviews__head">
+                <img class="reviews__img" src="/./img/reviews/user-1.jpg" width="58" height="58" alt="Аватар пользователя">
+              <div>
+                <p class="reviews__name">Евгения Доценко</p>
+                <p class="reviews__stars"></p>
+              </div>
+              <span class="reviews__date">02.05.2023 12:00</span>
+            </div>
+            <p class="reviews__text">
+              <span class="reviews__text-insert">Комментарий:</span>
+              Хороший шпагат
+            </p>
+          </li>
+          <li class="reviews__list-item">
+            <div class="reviews__head">
+                <img class="reviews__img" src="/./img/reviews/user-1.jpg" width="58" height="58" alt="Аватар пользователя">
+              <div>
+                <p class="reviews__name">Евгения Доценко</p>
+                <p class="reviews__stars"></p>
+              </div>
+              <span class="reviews__date">02.05.2023 12:00</span>
+            </div>
+            <p class="reviews__text">
+              <span class="reviews__text-insert">Комментарий:</span>
+              Хороший шпагат
+            </p>
+          </li>
+        </ul>
+      </section>
     </section>
 
+
+
   </main>
+
 
   <footer class="footer page-footer">
     <div class="container">
@@ -173,7 +249,7 @@
         <div class="footer__menu">
           <ul class="footer__products-list">
             <li class="footer__list-item">
-              <a class="footer__menu-link" href="#">Каталог</a>
+              <a class="footer__menu-link" href="./catalog.html">Каталог</a>
             </li>
             <li class="footer__list-item">
               <a class="footer__menu-link" href="#">Акции</a>
@@ -341,6 +417,7 @@
   </section>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/product-card.js"></script>
 
 </body>
 
