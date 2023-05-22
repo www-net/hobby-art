@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--bg-color--white">
   <header class="main-header">
 
     <nav class="menu">
       <div class="container">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="logo__img" width="122" height="62" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
         </a>
         <ul class="main-menu">
@@ -24,37 +24,36 @@
             <a class="main-menu__link" href="catalog.html">Каталог</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="./payment-and-delivery.html">Оплата и доставка</a>
+            <a class="main-menu__link" href="#">Оплата и доставка</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="./bonus-program.html">Бонусная программа</a>
+            <a class="main-menu__link" href="#">Бонусная программа</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="./about-us.html">О компании</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="./contacts.html">Контакты</a>
+            <a class="main-menu__link" href="#">Контакты</a>
           </li>
         </ul>
 
         <div class="menu__inner-wrapper">
           <form class="search" action="">
-            <input class="placeholder-text search__field" type="search" placeholder="Поиск товара">
+            <input class="placeholder-text search__field search__field--background--white" type="search"
+              placeholder="Поиск товара">
             <input class="search__button" type="submit" value="">
           </form>
 
           <ul class="user-menu">
             <li class="user-menu__item">
               <a class="user-menu__button login-link" href="#">
-                <span class="user-menu__button-inner">
+                <span class="user-menu__button-inner user-menu__button-inner--background--white">
                   <span class="user-menu__button-text">
-
                     <svg class="user-menu__img-user" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
                       fill="none">
                       <path fill="#976464"
                         d="M1.313 12.125s-.938 0-.938-.938c0-.937.938-3.75 5.625-3.75 4.688 0 5.625 2.813 5.625 3.75 0 .938-.938.938-.938.938H1.313ZM6 6.5A2.813 2.813 0 1 0 6 .875 2.813 2.813 0 0 0 6 6.5Z" />
                     </svg>
-
                     Войти
                   </span>
                 </span>
@@ -62,15 +61,13 @@
             </li>
             <li class="user-menu__item">
               <a class="user-menu__button" href="#">
-                <span class="user-menu__button-inner">
+                <span class="user-menu__button-inner user-menu__button-inner--background--white">
                   <span class="user-menu__button-text">
-
                     <svg class="user-menu__img-favorites" xmlns="http://www.w3.org/2000/svg" width="14" height="12"
                       fill="none">
                       <path fill="#976464"
                         d="M12.833 1.971C12.313.901 10.811.027 9.065.536A3.838 3.838 0 0 0 7 2.002 3.838 3.838 0 0 0 4.935.536C3.185.034 1.688.902 1.167 1.971c-.731 1.497-.428 3.181.902 5.005C3.11 8.403 4.6 9.85 6.763 11.53a.389.389 0 0 0 .478 0c2.158-1.676 3.652-3.111 4.694-4.554 1.326-1.824 1.63-3.508.898-5.005Z" />
                     </svg>
-
                     Избранное
                   </span>
                 </span>
@@ -78,10 +75,9 @@
               <span class="user-menu__count user-menu__favorites-count">2</span>
             </li>
             <li class="user-menu__item">
-              <a class="user-menu__button" href="./basket.html">
-                <span class="user-menu__button-inner">
+              <a class="user-menu__button" href="#">
+                <span class="user-menu__button-inner user-menu__button-inner--background--white">
                   <span class="user-menu__button-text">
-
                     <svg class="user-menu__img-cart" xmlns="http://www.w3.org/2000/svg" width="11" height="11"
                       fill="none">
                       <path fill="#976464"
@@ -98,6 +94,7 @@
       </div>
     </nav>
 
+
     <div class="contacts-header">
       <div class="container">
         <a class="contacts-header__phone" href="tel:+71231234567">+7 (123) 123 45 67</a>
@@ -107,229 +104,137 @@
         </p>
       </div>
     </div>
-
-    <section class="slider">
-      <div class="container">
-        <div class="slider__item">
-          <img class="slider__img" width="571" height="425" src="img/slider/slider-img.png"
-            alt="Фото пряжи от компании 'Macrametr'">
-          <div class="slider__wrapper">
-            <h2 class="slider__title">Пряжа Macrametr</h2>
-            <p class="slider__text">
-              Повседневная практика показывает, что
-              укрепление и развитие внутренней структуры
-              обеспечивает широкому кругу (специалистов)
-              участие в формировании форм воздействия.
-            </p>
-            <a class="button button--color slider__link" href="./catalog.html">
-              <span class="button__inner">
-                <span class="button__text">В каталог</span>
-              </span>
-            </a>
-          </div>
-          <div class="slider__pagination">
-            <button class="slider__button slider__button-back" disabled></button>
-            <span class="slider__pagination-count">1/5</span>
-            <button class="slider__button slider__button-next"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
   </header>
 
-  <main class="container main-page">
-    <h1 class="visually-hidden">Главная страница магазина 'ХОББИ АРТ'</h1>
-    <section class="products">
-      <h2 class="visually-hidden">Виды продукции</h2>
-      <form action="#">
-        <div class="products__select">
-          <div>
-            <input class="products__input visually-hidden" type="checkbox" id="products-checkbox">
-            <label class="products__checkbox" for="products-checkbox"></label>
-          </div>
-          <span class="title products__choice products__choice-new products__choice--active">Новинки</span>
-          <span class="title products__choice products__choice-popular">Популярное</span>
+  <main>
+    <h1 class="visually-hidden">Корзина покупок</h1>
+    <div class="container main-head">
+      <ul class="bread-crumbs">
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Главная</a></li>
+        <li class="bread-crumbs__item">Корзина</li>
+      </ul>
+    </div>
+
+    <section class="container ordering">
+      <h2 class="visually-hidden">Оформление заказа</h2>
+      <div class="ordering__column-1">
+        <div class="way-to-get">
+          <h3 class="ordering__title">Способ получения</h3>
+          <form action="#">
+            <label class="visually-hidden" for="city">Выбор города</label>
+            <input class="input placeholder-text way-to-get__city" type="text" name="city" id="city"
+              placeholder="Город">
+
+            <!-- select -->
+            <div class="select">
+              <span class="visually-hidden select-label" id="job-label">Выбор сервиса доставки</span>
+              <div class="select-wrapper">
+                <!-- class="input " -->
+                <select class="select-native js-select-native" aria-labelledby="job-label" name="delivery" id="">
+                  <option value="sel" disabled="" selected=""> Сервис доставки</option>
+                  <!-- Варианты -->
+                  <option value="russia pochta">Почта России</option>
+                  <option value="sdek">Сдэк</option>
+                  <option value="business-line">Деловые линии</option>
+                </select>
+                <div class="select-custom js-select-custom" aria-hidden="true">
+                  <div class="select-custom-trigger">Сервис доставки</div>
+                  <!-- Прекрасный кастомный селект -->
+                  <div class="select-custom__options">
+                    <div class="select-custom__option" data-value="russia-pochta">Почта России</div>
+                    <div class="select-custom__option" data-value="sdek">Сдэк</div>
+                    <div class="select-custom__option" data-value="business-line">Деловые линии</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /select -->
+
+            <ul class="way-to-get__list">
+              <li>
+                <label class="visually-hidden" for="street">Улица</label>
+                <input class="input way-to-get__input-street" type="text" name="street" id="street" placeholder="Улица">
+              </li>
+              <li>
+                <label class="visually-hidden" for="house">Дом</label>
+                <input class="input way-to-get__input-house" type="text" name="house" id="house" placeholder="Дом">
+              </li>
+              <li>
+                <label class="visually-hidden" for="apartment">Квартира</label>
+                <input class="input way-to-get__input-apartment" type="text" name="apartment" id="apartment"
+                  placeholder="Квартира">
+              </li>
+              <li>
+                <label class="visually-hidden" for="index">Индекс</label>
+                <input class="input way-to-get__input-index" type="text" name="index" id="index" placeholder="Индекс">
+              </li>
+            </ul>
+
+            <label class="visually-hidden" for="comment">Добавить комментарий</label>
+            <input class="input way-to-get__comment" type="text" name="comment" id="comment"
+              placeholder="Добавить комментарий">
+          </form>
         </div>
-      </form>
-      <div class="products__items">
-        <ul class="products__list">
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-1.png"
-                alt="Фото пряжи 'Macrametr'">
-              <span class="products__link-text">Пряжа Macrametr</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-2.png"
-                alt="Фото колец из бамбука">
-              <span class="products__link-text">Кольца бамбук</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-3.png"
-                alt="Фото пряжи от компании'Zefirka'">
-              <span class="products__link-text">Трикотажная пряжа Zefirka</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-4.png"
-                alt="Фото крученного шпагата">
-              <span class="products__link-text">Шпагат крученый</span>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="" class="products__link">
-              <img class="products__img" width="300" height="487" src="img/products/products-5.png" alt="Фото джута">
-              <span class="products__link-text">Джут «Арахна»</span>
-            </a>
-          </li>
-        </ul>
-        <button class="products__button products__button-back" type="button" disabled></button>
-        <button class="products__button products__button-next" type="button"></button>
-      </div>
+
+        <div class="recipient-details">
+          <h3 class="ordering__title">Данные получателя</h3>
+          <form action="#">
+            <ul class="recipient-details__list">
+              <li>
+                <label class="visually-hidden" for="surname">Фамилия</label>
+                <input class="input placeholder-text recipient-details__list-input" type="text" name="surname"
+                  id="surname" placeholder="Фамилия">
+              </li>
+              <li>
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="input placeholder-text recipient-details__list-input" type="text" name="name" id="name"
+                  placeholder="Имя">
+              </li>
+              <li>
+                <label class="visually-hidden" for="middle-name">Отчество</label>
+                <input class="input placeholder-text recipient-details__list-input" type="text" name="middle-name"
+                  id="middle-name" placeholder="Отчество">
+              </li>
+            </ul>
+            <div class="recipient-details__phone-wrapper">
+              <label class="visually-hidden" for="phone">Номер телефона</label>
+              <input class="input placeholder-text recipient-details__phone" type="text" name="phone" id="phone"
+                placeholder="Номер телефона">
+              <span class="recipient-details__hint-text">
+                По этому номеру телефона мы с вяжемся с вами для подтверждения
+                заказа
+              </span>
+            </div>
+            <div class="recipient-details__email-wrapper">
+              <label class="visually-hidden" for="email">E-mail</label>
+              <input class="input placeholder-text recipient-details__email" type="text" name="email" id="email"
+                placeholder="E-mail">
+              <span class="recipient-details__hint-text">
+                На эту почту вам придет письмо с составом заказа, а так же
+                трэк-номер для его отслеживания
+              </span>
+            </div>
+
+            <div class="newsletter">
+              <input class="visually-hidden newsletter__checkbox" type="checkbox" name=newsletter id="newsletter" checked>
+              <label class="newsletter__label" for="newsletter">Подписаться на рассылку новинок и акций</label>
+            </div>
+
+          </form>
+        </div>
+
+
+        <div class="ordering__column-2">
+
+        </div>
     </section>
 
-    <section class="catalog">
-      <h2 class="title catalog__title">Каталог товаров</h2>
-      <p class="section-background catalog__bg">Каталог</p>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Макраме</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Вязание</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Вышивка</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Лепка</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Инструменты</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item catalog__item--purple-bg-img">
-          <h3 class="catalog-item__title">Упаковка</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Товары для&nbsp;творчества</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog-item__title">Книги</h3>
-          <p class="catalog-item__price">от 250 ₽</p>
-          <p class="catalog-item__more">Подробнее</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="advantages">
-      <h2 class="title advantages__title">Хобби арт: 9 лет на рынке</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--suppliers">
-          <h3 class="advantages__item-title">Поставщики</h3>
-          <p class="advantages__item-text">
-            Мы работаем только с надежными
-            и проверенными поставщиками товаров
-            для творчества
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--products">
-          <h3 class="advantages__item-title">Товары</h3>
-          <p class="advantages__item-text">
-            Мы привозим актуальные и новые товары,
-            инструменты для вашего творчества по низким ценам
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--bonuses">
-          <h3 class="advantages__item-title">Бонусы</h3>
-          <p class="advantages__item-text">
-            У нас действует накопительная бонусная система скидок.
-            Дарим в день рождения 500 бонусных рублей
-          </p>
-        </li>
-      </ul>
-    </section>
-
-<div class="main-page__wrapper">
-      <section class="gallery-telegram">
-        <h2 class="title gallery-telegram__title">Наш telegram</h2>
-        <p class="section-background gallery-telegram__bg">telegram</p>
-        <ul class="gallery-telegram__list">
-          <li class="gallery-telegram__item">
-            <img class="gallery-telegram__img gallery-telegram__img--big" width="800" height="800"
-              src="img/telegram/telegram-1.png" alt="Фото из галереи telegram канала">
-          </li>
-          <li class="gallery-telegram__item">
-            <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-              src="img/telegram/telegram-2.png" alt="Фото из галереи telegram канала">
-          </li>
-          <li class="gallery-telegram__item">
-            <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-              src="img/telegram/telegram-3.png" alt="Фото из галереи telegram канала">
-          </li>
-          <li class="gallery-telegram__item">
-            <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-              src="img/telegram/telegram-4.png" alt="Фото из галереи telegram канала">
-          </li>
-          <li class="gallery-telegram__item">
-            <img class="gallery-telegram__img gallery-telegram__img--small" width="390" height="390"
-              src="img/telegram/telegram-5.png" alt="Фото из галереи telegram канала">
-          </li>
-          <li class="gallery-telegram__item">
-            <img class="gallery-telegram__img gallery-telegram__img--big" width="800" height="800"
-              src="img/telegram/telegram-6.png" alt="Фото из галереи telegram канала">
-          </li>
-        </ul>
-        <a class="button button--color">
-          <span class="button__inner">
-            <span class="button__text">@hhbbyyaart</span>
-          </span>
-        </a>
-      </section>
-</div>
-
-    <section class="feedback">
-      <h2 class="title feedback__title">Есть вопрос? Мы перезвоним!</h2>
-      <span class="section-background feedback__bg">Вопросы</span>
-      <form class="feedback__form" action="#" method="post">
-        <input class="input input--bg--transparent placeholder-text feedback__input" type="text" name="user-name" placeholder="Ваше имя">
-        <input class="input input--bg--transparent placeholder-text feedback__input" type="tel" name="phone" placeholder="Телефон">
-        <div class="feedback__button-wrapper">
-          <button class="button button--color" type="submit">
-            <span class="button__inner">
-              <span class="button__text">Отправить</span>
-            </span>
-          </button>
-          <p class="feedback__note">*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-      </form>
-      </div>
-    </section>
   </main>
-
   <footer class="footer page-footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__information">
-          <a class="footer__logo">
+          <a class="footer__logo" href="index.html">
             <img class="footer__logo-img" width="100" height="50" src="img/logo/logo.png"
               alt="Логотип компании 'Хобби арт'">
           </a>
@@ -355,7 +260,7 @@
               <a class="footer__menu-link" href="#">Популярное</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__menu-link" href="./warranty.html">Гарантия и возврат</a>
+              <a class="footer__menu-link" href="#">Гарантия и возврат</a>
             </li>
           </ul>
           <ul class="footer__services-list">
@@ -363,16 +268,16 @@
               <a class="footer__menu-link" href="./payment-and-delivery.html">Оплата и доставка</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__menu-link" href="./bonus-program.html">Бонусная программа</a>
+              <a class="footer__menu-link" href="#">Бонусная программа</a>
             </li>
             <li class="footer__list-item">
               <a class="footer__menu-link" href="./about-us.html">О компании</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__menu-link" href="./advantages.html">Преимущества</a>
+              <a class="footer__menu-link" href="#">Преимущества</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__menu-link login-link" href="./account.html">Личный кабинет</a>
+              <a class="footer__menu-link" href="#">Личный кабинет</a>
             </li>
           </ul>
         </div>
@@ -510,6 +415,9 @@
     <button class="modal-close" type="button"></button>
   </section>
 
+
+  <script src="./js/select.js"></script>
+  <script src="./js/product-card.js"></script>
   <script src="./js/modal.js"></script>
 
 </body>
