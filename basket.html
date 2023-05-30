@@ -41,7 +41,7 @@
           <form class="search" action="">
             <input class="placeholder-text search__field search__field--background--white" type="search"
               placeholder="Поиск товара">
-            <input class="search__button" type="submit" value="">
+            <button class="search__button" type="submit"></button>
           </form>
 
           <ul class="user-menu">
@@ -107,7 +107,7 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">Корзина покупок</h1>
+    <h1 class="visually-hidden">Корзина покупокупателя</h1>
     <div class="container main-head">
       <ul class="bread-crumbs">
         <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Главная</a></li>
@@ -216,17 +216,155 @@
             </div>
 
             <div class="newsletter">
-              <input class="visually-hidden newsletter__checkbox" type="checkbox" name=newsletter id="newsletter" checked>
+              <input class="visually-hidden newsletter__checkbox" type="checkbox" name="newsletter" id="newsletter"
+                checked>
               <label class="newsletter__label" for="newsletter">Подписаться на рассылку новинок и акций</label>
             </div>
-
           </form>
         </div>
 
-
-        <div class="ordering__column-2">
-
+        <div class="payment">
+          <h3 class="ordering__title">Способ оплаты</h3>
+          <form action="#">
+            <ul class="payment__list">
+              <li>
+                <input class="visually-hidden payment__checkbox" type="radio" name="payment" value="off-line"
+                  id="off-line">
+                <label class="payment__label" for="off-line">Оплата при получении наличными или картой</label>
+              </li>
+              <li>
+                <input class="visually-hidden payment__checkbox" type="radio" name="payment" value="on-line"
+                  id="on-line">
+                <label class="payment__label" for="on-line">Оплата банковской картой онлайн</label>
+              </li>
+            </ul>
+          </form>
         </div>
+      </div>
+
+      <div class="ordering__column-2">
+        <div class="order-contents">
+          <h3 class="ordering__title order-contents__title">Состав заказа</h3>
+          <ul class="order-contents__list">
+            <li class="order-contents__item">
+              <a class="order-contents__img-link" href="./product-card.html">
+                <img class="order-contents__img" width="150" height="150" src="img/basket/1.png" alt="Картинка товара">
+              </a>
+              <a class="order-contents__title-link" href="./product-card.html">
+                <h4 class="order-contents__item-title">
+                  <span class="order-contents__item-category">Шпагат</span>
+                  <span class="order-contents__item-title">Macrametr</span>
+                  <span class="order-contents__item-feature">4&nbsp;мм, 100 нитей</span>
+                </h4>
+              </a>
+
+              <div class="order-contents__quantity-count">
+                <span class="order-contents__quantity">1</span>
+                <button class="order-contents__minus">&ndash;</button>
+                <button class="order-contents__plus">+</button>
+              </div>
+
+              <span class="order-contents__item-price">332 &#8381;</span>
+              <button class="order-contents__item-delete"></button>
+            </li>
+            <li class="order-contents__item">
+              <a class="order-contents__img-link" href="./product-card.html">
+                <img class="order-contents__img" width="150" height="150" src="img/basket/2.png" alt="Картинка товара">
+              </a>
+              <a class="order-contents__title-link" href="./product-card.html">
+                <h4 class="order-contents__item-title">
+                  <span class="order-contents__item-category">Шпагат джутовый</span>
+                  <span class="order-contents__item-title">Сибшнур</span>
+                  <span class="order-contents__item-feature">500 м</span>
+                </h4>
+              </a>
+
+              <div class="order-contents__quantity-count">
+                <span class="order-contents__quantity">1</span>
+                <button class="order-contents__minus">&ndash;</button>
+                <button class="order-contents__plus">+</button>
+              </div>
+
+              <span class="order-contents__item-price">385 &#8381;</span>
+              <button class="order-contents__item-delete"></button>
+            </li>
+            <li class="order-contents__item">
+              <a class="order-contents__img-link" href="./product-card.html">
+                <img class="order-contents__img" width="150" height="150" src="img/basket/3.png" alt="Картинка товара">
+              </a>
+              <a class="order-contents__title-link" href="./product-card.html">
+                <h4 class="order-contents__item-title">
+                  <span class="order-contents__item-category">Шпагат</span>
+                  <span class="order-contents__item-title">Macrametr</span>
+                  <span class="order-contents__item-feature">4&nbsp;мм, 100 нитей</span>
+                </h4>
+              </a>
+
+              <div class="order-contents__quantity-count">
+                <span class="order-contents__quantity">1</span>
+                <button class="order-contents__minus">&ndash;</button>
+                <button class="order-contents__plus">+</button>
+              </div>
+
+              <span class="order-contents__item-price">135 &#8381;</span>
+              <button class="order-contents__item-delete"></button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="promo-code">
+          <h3 class="ordering__title">Промокод</h3>
+          <form class="promo-code__form" action="">
+            <label class="visually-hidden" for="code">Введите промокод</label>
+            <input class="input input--bg--transparent placeholder-text promo-code__input" type="text" name="code"
+              id="code" placeholder="Промокод">
+            <button class="button button--color" type="submit">
+              <span class="button__inner">
+                <span class="button__text">Активировать</span>
+              </span>
+            </button>
+            <span class="promo-code__hint-text">У вас есть промокод? Активируйте его</span>
+          </form>
+          <div class="promo-code__bonuses">
+            <p>
+              Доступно для списания:<span class="promo-code__bonuses-count">&nbsp;25 бонусов</span>
+            </p>
+            <button class="promo-code__bonusses-button">Использовать</button>
+          </div>
+          <ul class="settlement-sheet">
+            <li class="settlement-sheet__item">
+              <p class="settlement-sheet__product-name">Товары, 3 шт</p>
+              <p class="settlement-sheet__bottom-line"></p>
+              <p class="settlement-sheet__product-price">852 &#8381;</p>
+            </li>
+            <li class="settlement-sheet__item">
+              <p class="settlement-sheet__product-name">Доставка</p>
+              <p class="settlement-sheet__bottom-line"></p>
+              <p class="settlement-sheet__product-price">254 &#8381;</p>
+            </li>
+            <li class="settlement-sheet__item">
+              <p class="settlement-sheet__product-name">Списание бонусов</p>
+              <p class="settlement-sheet__bottom-line"></p>
+              <p class="settlement-sheet__product-price">-25 &#8381;</p>
+            </li>
+          </ul>
+          <div class="promo-code__price-box">
+            <p>Вам будет начислено:<br>
+              <span class="promo-code__bonuses-count">51 бонус</span>
+            </p>
+            <span class="promo-code__price">1081 &#8381;</span>
+          </div>
+
+          <div class="promo-code__button-wrapper">
+            <button class="button button--color" type="submit">
+              <span class="button__inner">
+                <span class="button__text">Оформить заказ</span>
+              </span>
+            </button>
+            <p class="promo-code__hint-text">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
