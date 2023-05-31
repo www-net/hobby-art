@@ -2,6 +2,7 @@ const loginLink = document.querySelector('.login-link');
 const modals = document.querySelectorAll('.modal')
 const modalLogin = document.querySelector('.modal-login');
 const modalRegistration = document.querySelector('.modal-registration');
+const modalProof = document.querySelector('.modal-proof')
 const modalPassword = document.querySelector('.modal-password');
 const closeButtons = document.querySelectorAll('.modal-close');
 const formLogin = modalLogin.querySelector('form');
@@ -47,6 +48,17 @@ passwordButton.addEventListener('click', (evt) => {
   modalPassword.classList.add('modal-show');
   userEmail.focus();
 });
+
+
+// Открытие модального окна при нажатии кнопки "оформить заказ"
+// на странице корзины пользователя
+
+if (localStorage.getItem('modal-proof')) {
+  modalProof.classList.add('modal-show');
+  localStorage.removeItem('modal-proof');
+}
+
+
 
 // Закрытие модальных окон по клику
 
