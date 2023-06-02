@@ -1,12 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body class="page-body">
+  <header class="main-header">
+
+    <nav class="menu">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo__img" width="122" height="62" src="img/logo/logo.png" alt="Логотип компании 'Хобби арт'">
+        </a>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="./catalog.html">Каталог</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Бонусная программа</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">О компании</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="menu__inner-wrapper">
+          <form class="search" action="">
+            <input class="placeholder-text search__field" type="search" placeholder="Поиск товара">
+            <button class="search__button" type="submit"></button>
+          </form>
+
+          <ul class="user-menu">
+            <li class="user-menu__item">
+              <a class="user-menu__button login-link" href="#">
+                <span class="user-menu__button-inner">
+                  <span class="user-menu__button-text">
+                    <svg class="user-menu__img-user" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                      fill="none">
+                      <path fill="#976464"
+                        d="M1.313 12.125s-.938 0-.938-.938c0-.937.938-3.75 5.625-3.75 4.688 0 5.625 2.813 5.625 3.75 0 .938-.938.938-.938.938H1.313ZM6 6.5A2.813 2.813 0 1 0 6 .875 2.813 2.813 0 0 0 6 6.5Z" />
+                    </svg>
+                    Войти
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__button" href="#">
+                <span class="user-menu__button-inner">
+                  <span class="user-menu__button-text">
+                    <svg class="user-menu__img-favorites" xmlns="http://www.w3.org/2000/svg" width="14" height="12"
+                      fill="none">
+                      <path fill="#976464"
+                        d="M12.833 1.971C12.313.901 10.811.027 9.065.536A3.838 3.838 0 0 0 7 2.002 3.838 3.838 0 0 0 4.935.536C3.185.034 1.688.902 1.167 1.971c-.731 1.497-.428 3.181.902 5.005C3.11 8.403 4.6 9.85 6.763 11.53a.389.389 0 0 0 .478 0c2.158-1.676 3.652-3.111 4.694-4.554 1.326-1.824 1.63-3.508.898-5.005Z" />
+                    </svg>
+                    Избранное
+                  </span>
+                </span>
+              </a>
+              <span class="user-menu__count user-menu__favorites-count">2</span>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__button" href="./basket.html">
+                <span class="user-menu__button-inner">
+                  <span class="user-menu__button-text">
+                    <svg class="user-menu__img-cart" xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                      fill="none">
+                      <path fill="#976464"
+                        d="M5.081.555 3.214 3.667h4.572L5.918.555l.63-.377 2.093 3.489h1.844c.284 0 .515.23.515.515v.322c0 2.159-.503 4.288-1.468 6.219a.502.502 0 0 1-.449.277H1.917a.502.502 0 0 1-.449-.278A13.904 13.904 0 0 1 0 4.503v-.32c0-.285.231-.516.516-.516h1.843L4.451.178l.63.377Z" />
+                    </svg>
+                    Корзина
+                  </span>
+                </span>
+              </a>
+              <span class="user-menu__count user-menu__cart-count">1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="contacts-header">
+      <div class="container">
+        <a class="contacts-header__phone" href="tel:+71231234567">+7 (123) 123 45 67</a>
+        <p class="contacts-header__address">г. Москва, ​Пресненская набережная, 6 ст2</p>
+        <p class="contacts-header__working-hours">
+          Ежедневно с 10:00 до 19:00
+        </p>
+      </div>
+    </div>
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__item">
+          <img class="slider__img" width="571" height="425" src="img/slider/slider-img.png" alt="">
+          <div class="slider__wrapper">
+            <h2 class="slider__title">Пряжа Macrametr</h2>
+            <p class="slider__text">
+              Повседневная практика показывает, что
+              укрепление и развитие внутренней структуры
+              обеспечивает широкому кругу (специалистов)
+              участие в формировании форм воздействия.
+            </p>
+            <a class="button button--color slider__link" href="./catalog.html">
+              <span class="button__inner">
+                <span class="button__text">В каталог</span>
+              </span>
+            </a>
+          </div>
+          <div class="slider__pagination">
+            <button class="slider__button slider__button-back" disabled></button>
+            <span class="slider__pagination-count">1/5</span>
+            <button class="slider__button slider__button-next"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </header>
+
+  <main class="container account-page">
+    <div class="main-head">
+      <ul class="bread-crumbs">
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="index.html">Главная</a></li>
+        <li class="bread-crumbs__item">Личный кабинет</li>
+      </ul>
+    </div>
+    <h1 class="title account-page__title">Личный кабинет</h1>
+    <section class="account">
+      <div class="account__column-1">
+        <div class="account__user">
+          <div class="account__avatar-wrapper">
+            <img class="account__avatar" src="./img/account/avatar.png" width="100" height="100"
+              alt="Аватар пользователя">
+          </div>
+          <h2 class="account__title">Ольга Иванова</h2>
+        </div>
+        <ul class="account__list">
+          <li class="account__button-item">
+            <button class="account__button account__button--current">Мои данные</button>
+          </li>
+          <li class="account__button-item">
+            <button class="account__button">Бонусный счет</button>
+          </li>
+          <li class="account__button-item">
+            <button class="account__button">Избранные товары</button>
+          </li>
+          <li class="account__button-item">
+            <button class="account__button">История заказов</button>
+          </li>
+          <li class="account__button-item">
+            <button class="account__button">Рассылка</button>
+          </li>
+          <li class="account__button-item">
+            <button class="account__button">Отзывы</button>
+          </li>
+        </ul>
+      </div>
+      <div class="account__column-2">
+        <div class="details">
+          <h2 class="account__title ">Мои данные</h2>
+          <form action="#">
+            <div class="details__fieldset">
+              <div class="details__item details__name">
+                <!-- value заполнен для примера отображения текста на сайте-->
+                <label class="details__label" for="name">
+                  Имя: &nbsp;
+                  <input class="details__input" type="text" id="name" value="Ольга" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+              <div class="details__item details__surname">
+                <label class="details__label" for="surname">
+                  Фамилия: &nbsp;
+                  <input class="details__input" type="text" id="surname" value="Иванова" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+              <div class="details__item details__patronymic">
+                <label class="details__label" for="patronymic">
+                  Отчество: &nbsp;
+                  <input class="details__input" type="text" id="patronymic" value="Ивановна" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+              <div class="details__item details__bird">
+                <label class="details__label" for="bird">
+                  Дата рождения: &nbsp;
+                  <input class="details__input" type="date" id="bird" value="1986-06-15" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+
+              <div class="details__item details__phone">
+                <label class="details__label" for="phone">
+                  Номер телефона: &nbsp;
+                  <input class="details__input" type="tel" id="phone" value="+7 (987) 954 32 16" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+              <div class="details__item details__e-mail">
+                <label class="details__label" for="e-mail">
+                  E-mail: &nbsp;
+                  <input class="details__input" type="email" id="e-mail" value="olga@gmail.com" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+              <div class="details__item details__address">
+                <label class="details__label" for="address">
+                  Адрес: &nbsp;
+                  <input class="details__input" type="text" id="address" value="Москва, Пресненская набережная, 12"
+                    readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+              <div class="details__item details__password">
+                <label class="details__label" for="password">
+                  Пароль: &nbsp;
+                  <input class="details__input" type="password" id="password" value="*********" readonly>
+                  <button class="details__item-button" type="button">Изменить</button>
+                </label>
+              </div>
+            </div>
+            <div class="details__button-wrapper">
+              <button type="submit" class="button button--color details__button" href="#">
+                <span class="button__inner">
+                  <span class="button__text">Сохранить данные</span>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer page-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__information">
+          <a class="footer__logo" href="index.html">
+            <img class="footer__logo-img" width="100" height="50" src="img/logo/logo.png"
+              alt="Логотип компании 'Хобби арт'">
+          </a>
+          <div class="footer__contacts">
+            <a class="footer__phone" href="tel:+71231234567">+7 (123) 123 45 67</a>
+            <p class="footer__address">г. Москва, ​Пресненская набережная, 6 ст2</p>
+            <p class="footer__hours">Ежедневно с 10:00 до 19:00</p>
+            <a class="footer__telegram" href="#">@hhbbyyaart</a>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__products-list">
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="./catalog.html">Каталог</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Акции</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Новинки</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Популярное</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="./warranty.html">Гарантия и возврат</a>
+            </li>
+          </ul>
+          <ul class="footer__services-list">
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="./payment-and-delivery.html">Оплата и доставка</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="./bonus-program.html">Бонусная программа</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="./about-us.html">О компании</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="#">Преимущества</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__menu-link" href="./account.html">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscription">
+          <div class="subscription_wrapper">
+            <span class="subscription__text">Узнавайте первым о новинках и новостях</span>
+            <form class="subscription__form" action="#" method="post">
+              <input class="input placeholder-text subscription__input" type="email" placeholder="Ваш Email">
+              <button class="button button--color" type="submit">
+                <span class="button__inner">
+                  <span class="button__text">Подписаться</span>
+                </span>
+              </button>
+            </form>
+            <p class="subscription__terms">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          </div>
+
+          <p class="subscription__copyright">
+            &copy;&nbsp;2012-2021&nbsp;ХОББИ АРТ&nbsp;&mdash; официальный интернет&#8209;магазин товаров для хобби. Все
+            права защищены.
+            Условия использования и&nbsp;политика конфиденциальности
+          </p>
+        </div>
+      </div class="footer__inner">
+    </div>
+  </footer>
+
+  <section class="modal modal-login">
+    <h2 class="modal__title">Войти в личный кабинет</h2>
+    <form class="modal__form" action="#" method="post">
+      <ul class="modal__list">
+        <li class="modal__list-item">
+          <label class="visually-hidden" for="modal-phone">Номер телефона</label>
+          <input class="placeholder-text modal-input" id="modal-phone" type="tel" name="phone"
+            placeholder="Номер телефона" required>
+        </li>
+        <li class="modal__list-item">
+          <label class="visually-hidden" for="modal-password">Пароль</label>
+          <input class="placeholder-text modal-input modal-input--password" id="modal-password" type="password"
+            name="password" placeholder="Пароль" required>
+          <button class="modal__eye-button" type="button" onclick="visibleHidePassword(this);"></button>
+        </li>
+        <li class="modal__list-item">
+          <input class="visually-hidden modal-login__remember-input" type="checkbox" name="remember" id="user-password">
+          <label class="modal-login__remember" for="user-password">Запомнить меня</label>
+        </li>
+      </ul>
+
+      <p class="modal-login__button-wrapper">
+        <button class="button button--color" type="submit">
+          <span class="button__inner">
+            <span class="button__text">Войти</span>
+          </span>
+        </button>
+        <a class="modal__text-link modal-login__password" href="#">Забыли пароль?</a>
+      </p>
+    </form>
+    <p class="modal-login__registration">
+      <span class="modal-login__text-registration">Вы еще не зарегистрированы ?</span>
+      <a class="button modal-login__registration-button" href="#">
+        <span class="button__inner">
+          <span class="button__text">Регистрация</span>
+        </span>
+      </a>
+    </p>
+    <button class="modal-close" type="button"></button>
+  </section>
+
+  <section class="modal modal-registration">
+    <h2 class="modal__title">Регистрация</h2>
+    <form class="modal-registration__form" action="#" method="post">
+      <ul class="modal__list modal-registration__list">
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input" type="text" name="user-name" placeholder="Имя" required>
+        </li>
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input" type="text" name="user-surname" placeholder="Фамилия" required>
+        </li>
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input" type="text" name="user-patronymic" placeholder="Отчество">
+        </li>
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input" type="tel" name="user-phone" placeholder="Номер телефона"
+            required>
+        </li>
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input" type="email" name="user-email" placeholder="E-mail">
+        </li>
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input modal-input--password" type="password" name="user-password"
+            placeholder="Придумайте пароль" required>
+          <button class="modal__eye-button" type="button" onclick="visibleHidePassword(this);"></button>
+        </li>
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input modal-input--password" type="password" name="user-confirm-password"
+            placeholder="Повторите пароль" required>
+          <p class="modal-registration__note">Пароль должен содержать от 6 символов</p>
+        </li>
+      </ul>
+      <button class="button button--color modal-password__button" type="submit">
+        <span class="button__inner">
+          <span class="button__text">Зарегистрироваться</span>
+        </span>
+      </button>
+    </form>
+    <div class="modal-registration__button-wrapper">
+      <p class="modal-registration__text">Есть аккаунт?</p>
+      <a class="button" href="#">
+        <span class="button__inner">
+          <span class="button__text modal-registration__login">Войти</span>
+        </span>
+      </a>
+    </div>
+    <button class="modal-close" type="button"></button>
+  </section>
+
+  <section class="modal modal-password">
+    <h2 class="modal__title">Забыли пароль?</h2>
+    <form class="modal-password__form" action="#" method="post">
+      <ul class="modal__list modal-password__list">
+        <li class="modal__list-item">
+          <input class="placeholder-text modal-input modal-password__input" type="email" name="user-email"
+            placeholder="Введите ваш E-mail" required>
+        </li>
+      </ul>
+
+      <p class="modal-password__note">На E-mail придет письмо со ссылкой на смену пароля</p>
+      <button class="button button--color modal-password__button" type="submit">
+        <span class="button__inner">
+          <span class="button__text">Отправить</span>
+        </span>
+      </button>
+    </form>
+    <button class="modal-close" type="button"></button>
+  </section>
+
+  <script src="./js/modal.js"></script>
+  <script src="./js/details.js"></script>
+
 
 </body>
+
 </html>

@@ -50,8 +50,8 @@ passwordButton.addEventListener('click', (evt) => {
 });
 
 
-// Открытие модального окна при нажатии кнопки "оформить заказ"
-// на странице корзины пользователя
+// Открытие модального окна"оформить заказ"
+// при нажатии кнопки на странице корзины пользователя
 
 if (localStorage.getItem('modal-proof')) {
   modalProof.classList.add('modal-show');

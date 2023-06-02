@@ -2822,7 +2822,7 @@ img {
   color: var(--basic-text-color);
 }
 
-.order-contents__quantity-count {
+.order-contents__counter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3008,6 +3008,232 @@ img {
   margin-top: -8px;
   font-size: 12px;
   line-height: 15px;
+}
+
+
+/* account-page */
+
+.account-page__title {
+  text-align: start;
+  margin-bottom: 48px;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 64px;
+
+  background-color: var(--basic-white);
+  box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+  border-radius: 20px;
+}
+
+.account__column-1 {
+  position: relative;
+
+  width: 317px;
+}
+
+.account__column-1::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 350px;
+
+  width: 1px;
+  height: 100%;
+
+  background-color: var(--half-gray);
+}
+
+.account__user {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.account__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.account__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.account__button {
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--half-gray);
+
+  background-color: transparent;
+  border: none;
+}
+
+.account__button--current {
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 17px 32px;
+
+  color: var(--basic-white);
+
+  background: linear-gradient(59.75deg, #C5C5A8 -2.61%, #E2E1CF 76.3%, #E2E1CF 76.3%);
+  border: none;
+  border-radius: 20px;
+}
+
+.account__button-item:not(:first-child) .account__button--current {
+  margin-top: -18px;
+}
+
+.account__column-2 {
+  width: 1047px;
+  padding-top: 20px;
+}
+
+/* details */
+
+.details {
+}
+
+.details__fieldset {
+  display: grid;
+  grid-template-columns: 505px 505px;
+  grid-template-rows: repeat(4, 50px);
+  grid-template-areas:
+    "name phone"
+    "surname e-mail"
+    "patronymic address"
+    "birth password"
+  ;
+  column-gap: 40px;
+  row-gap: 27px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  border: none;
+}
+
+.details__item {
+  position: relative;
+}
+
+.details__label {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 15px 130px 15px 32px;
+
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--half-gray);
+
+  background-color: var(--basic-white);
+  border: 1px solid var(--half-gray);
+  border-radius: 46px;
+}
+
+.details__label:focus-within {
+  box-shadow: 0 0 0 2px var(--basic-white), 0 0 0 4px var(--light-purplish-gray);
+}
+
+.details__input {
+  flex-grow: 1;
+
+  width: calc(100% - 162px);
+
+  font-weight: 600;
+  color: var(--basic-text-color);
+
+  border: none;
+}
+
+.details__input:focus {
+  outline: none;
+}
+
+.details__item-button {
+  position: absolute;
+  top: calc(100% - 2.3em);
+  right: 32px;
+
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--half-gray);
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.details__item-button::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url(../img/account/pencil.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.details__button-wrapper {
+  text-align: center;
+}
+
+.details__button {
+  text-align: start;
+}
+
+.details__name {
+  grid-area: name;
+}
+
+.details__surname {
+  grid-area: surname;
+}
+
+.details__patronymic {
+  grid-area: patronymic;
+}
+
+.details__bird {
+  grid-area: birth;
+}
+
+.details__phone {
+  grid-area: phone;
+}
+.details__e-mail {
+  grid-area: e-mail;
+}
+.details__address {
+  grid-area: address;
+}
+.details__password {
+  grid-area: password;
 }
 
 /* modals */

@@ -1,8 +1,8 @@
-// quantity-counter
+// Счетчик колличества единиц продукции покупателя
 
-const plus = document.querySelector(".product-card__increment");
-const minus = document.querySelector(".product-card__decrement");
 const num = document.querySelector(".product-card__quantity");
+const minus = document.querySelector(".product-card__decrement");
+const plus = document.querySelector(".product-card__increment");
 
 let a = 1;
 
@@ -10,7 +10,8 @@ plus.addEventListener("click", (evt) => {
   evt.preventDefault();
 
   a++;
-  a = (a < 10) ? "0" + a : a;
+  //Добавить ноль в начале числа, если они меньше десяти
+  // a = (a < 10) ? "0" + a : a;
   num.innerText = a;
 });
 
@@ -18,7 +19,8 @@ minus.addEventListener("click", (evt) => {
   evt.preventDefault();
   if (a > 1) {
     a--;
-    a = (a < 10) ? "0" + a : a;
+  //Добавить ноль в начале числа, если они меньше десяти
+    // a = (a < 10) ? "0" + a : a;
     num.innerText = a;
   }
 });
