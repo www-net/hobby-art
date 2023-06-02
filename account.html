@@ -171,80 +171,99 @@
           </li>
         </ul>
       </div>
-      <div class="account__column-2">
-        <div class="details">
-          <h2 class="account__title ">Мои данные</h2>
-          <form action="#">
-            <div class="details__fieldset">
-              <div class="details__item details__name">
-                <!-- value заполнен для примера отображения текста на сайте-->
-                <label class="details__label" for="name">
-                  Имя: &nbsp;
-                  <input class="details__input" type="text" id="name" value="Ольга" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
-              </div>
-              <div class="details__item details__surname">
-                <label class="details__label" for="surname">
-                  Фамилия: &nbsp;
-                  <input class="details__input" type="text" id="surname" value="Иванова" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
-              </div>
-              <div class="details__item details__patronymic">
-                <label class="details__label" for="patronymic">
-                  Отчество: &nbsp;
-                  <input class="details__input" type="text" id="patronymic" value="Ивановна" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
-              </div>
-              <div class="details__item details__bird">
-                <label class="details__label" for="bird">
-                  Дата рождения: &nbsp;
-                  <input class="details__input" type="date" id="bird" value="1986-06-15" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
-              </div>
 
-              <div class="details__item details__phone">
-                <label class="details__label" for="phone">
-                  Номер телефона: &nbsp;
-                  <input class="details__input" type="tel" id="phone" value="+7 (987) 954 32 16" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
+      <div class="account__column-2">
+        <ul class="account__list">
+          <li class="account__slide details account__slide--current">
+            <h2 class="account__title ">Мои данные</h2>
+            <form action="#">
+              <div class="details__fieldset">
+                <div class="details__item details__name">
+                  <!-- value заполнен для примера отображения текста на сайте-->
+                  <label class="details__label" for="name">
+                    Имя: &nbsp;
+                    <input class="details__input" type="text" id="name" value="Ольга" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+                <div class="details__item details__surname">
+                  <label class="details__label" for="surname">
+                    Фамилия: &nbsp;
+                    <input class="details__input" type="text" id="surname" value="Иванова" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+                <div class="details__item details__patronymic">
+                  <label class="details__label" for="patronymic">
+                    Отчество: &nbsp;
+                    <input class="details__input" type="text" id="patronymic" value="Ивановна" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+                <div class="details__item details__bird">
+                  <label class="details__label" for="bird">
+                    Дата рождения: &nbsp;
+                    <input class="details__input" type="date" id="bird" value="1986-06-15" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+
+                <div class="details__item details__phone">
+                  <label class="details__label" for="phone">
+                    Номер телефона: &nbsp;
+                    <input class="details__input" type="tel" id="phone" value="+7 (987) 954 32 16" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+                <div class="details__item details__e-mail">
+                  <label class="details__label" for="e-mail">
+                    E-mail: &nbsp;
+                    <input class="details__input" type="email" id="e-mail" value="olga@gmail.com" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+                <div class="details__item details__address">
+                  <label class="details__label" for="address">
+                    Адрес: &nbsp;
+                    <input class="details__input" type="text" id="address" value="Москва, Пресненская набережная, 12"
+                      readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
+                <div class="details__item details__password">
+                  <label class="details__label" for="password">
+                    Пароль: &nbsp;
+                    <input class="details__input" type="password" id="password" value="*********" readonly>
+                    <button class="details__item-button" type="button">Изменить</button>
+                  </label>
+                </div>
               </div>
-              <div class="details__item details__e-mail">
-                <label class="details__label" for="e-mail">
-                  E-mail: &nbsp;
-                  <input class="details__input" type="email" id="e-mail" value="olga@gmail.com" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
+              <div class="details__button-wrapper">
+                <button type="submit" class="button button--color details__button">
+                  <span class="button__inner">
+                    <span class="button__text">Сохранить данные</span>
+                  </span>
+                </button>
               </div>
-              <div class="details__item details__address">
-                <label class="details__label" for="address">
-                  Адрес: &nbsp;
-                  <input class="details__input" type="text" id="address" value="Москва, Пресненская набережная, 12"
-                    readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
-              </div>
-              <div class="details__item details__password">
-                <label class="details__label" for="password">
-                  Пароль: &nbsp;
-                  <input class="details__input" type="password" id="password" value="*********" readonly>
-                  <button class="details__item-button" type="button">Изменить</button>
-                </label>
-              </div>
-            </div>
-            <div class="details__button-wrapper">
-              <button type="submit" class="button button--color details__button" href="#">
-                <span class="button__inner">
-                  <span class="button__text">Сохранить данные</span>
-                </span>
-              </button>
-            </div>
-          </form>
-        </div>
+            </form>
+          </li>
+          <li class="account__slide details account__slide--current">
+            <h2 class="account__title ">Второй слайд</h2>
+          </li>
+          <li class="account__slide details account__slide--current">
+            <h2 class="account__title ">Третий слайд</h2>
+          </li>
+          <li class="account__slide details account__slide--current">
+            <h2 class="account__title ">Четвертый слайд</h2>
+          </li>
+          <li class="account__slide details account__slide--current">
+            <h2 class="account__title ">Пятый слайд</h2>
+          </li>
+          <li class="account__slide details account__slide--current">
+            <h2 class="account__title ">Шестой слайд</h2>
+          </li>
+        </ul>
+
       </div>
     </section>
   </main>
@@ -435,7 +454,7 @@
   </section>
 
   <script src="./js/modal.js"></script>
-  <script src="./js/details.js"></script>
+  <script src="./js/account.js"></script>
 
 
 </body>

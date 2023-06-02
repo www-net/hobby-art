@@ -3052,13 +3052,21 @@ img {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 57px;
 }
 
 .account__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+}
+
+.account__slide {
+  display: none;
+}
+
+.account__slide--current {
+  display: block;
 }
 
 .account__list {
@@ -3069,6 +3077,7 @@ img {
 }
 
 .account__button {
+  display: block;
   margin-bottom: 40px;
 
   font-weight: 600;
@@ -3082,7 +3091,8 @@ img {
 
 .account__button--current {
   width: 100%;
-  margin-bottom: 22px;
+  margin-top: -17px;
+  margin-bottom: 25px;
   padding: 17px 32px;
 
   color: var(--basic-white);
@@ -3092,19 +3102,12 @@ img {
   border-radius: 20px;
 }
 
-.account__button-item:not(:first-child) .account__button--current {
-  margin-top: -18px;
-}
-
 .account__column-2 {
   width: 1047px;
   padding-top: 20px;
 }
 
 /* details */
-
-.details {
-}
 
 .details__fieldset {
   display: grid;
