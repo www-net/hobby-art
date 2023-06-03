@@ -1868,9 +1868,11 @@ img {
 /* catalog-card-button */
 
 .catalog-card-button {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  bottom: 30px;
 
-  width: 100%;
+  width: 184px;
   margin: 0;
   padding: 1px;
 
@@ -1967,7 +1969,7 @@ img {
 .goods__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 24px;
 
   margin: 0;
   padding: 0;
@@ -1978,12 +1980,12 @@ img {
 .goods__item {
   position: relative;
 
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 245px;
   min-height: 422px;
-  padding: 60px 30px 30px;
+  padding: 60px 30px 90px;
 
   background-color: var(--basic-white);
   box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
@@ -2063,10 +2065,6 @@ img {
   background-image: linear-gradient(102.48deg, var(--copper-pink) -29.03%, var(--light-purplish-gray) 97.75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.goods__cart {
-  bottom: 0;
 }
 
 .goods__item-choice {
@@ -3034,7 +3032,8 @@ img {
 .account__column-1 {
   position: relative;
 
-  width: 317px;
+  min-width: 317px;
+  padding-bottom: 120px;
 }
 
 .account__column-1::after {
@@ -3104,8 +3103,45 @@ img {
   border-radius: 20px;
 }
 
+.account-exit {
+  position: absolute;
+  bottom: 5px;
+
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  padding-left: 28px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--half-gray);
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.account-exit::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../img/account/exit.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* account__column-2 */
+
 .account__column-2 {
-  width: 1047px;
+  width: 1052px;
   padding-top: 20px;
 }
 
