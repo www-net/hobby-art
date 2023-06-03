@@ -1,5 +1,7 @@
 /*
-.modal-visible - добавляется к body, когда открываются модальные окна
+.modal-visible - можно реализовать добавление к body,
+когда открываются модальные окна, чтобы главная страница не скролилась
+
 .modal-show - для отображения модальных окон
 
 */
@@ -3138,7 +3140,6 @@ img {
   box-sizing: border-box;
   padding: 15px 130px 15px 32px;
 
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
