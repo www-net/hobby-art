@@ -50,3 +50,20 @@ function showServiceSlides(n) {
 	servicesSlides[n].classList.add("account__slide--current");
 	servicesControls[n].classList.add("account__button--current");
 }
+
+// Открыть список продуктов по клику по кнопке "Подробнее о заказе" в Истории заказов
+
+const orderHistory = document.querySelector('.order-history');
+const historyItems = orderHistory.querySelectorAll('.order-history__item');
+
+historyItems.forEach((elem) => {
+  const buttonMore = elem.querySelector('.order-history__more');
+  const productsBox = elem.querySelector('.order-history__products');
+
+  buttonMore.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    buttonMore.classList.toggle('order-history__more--active');
+    productsBox.classList.toggle('order-history__products--active');
+  })
+})
+
